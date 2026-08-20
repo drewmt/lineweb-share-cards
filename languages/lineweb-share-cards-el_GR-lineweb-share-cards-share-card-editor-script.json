@@ -1,0 +1,152 @@
+{
+  "translation-revision-date": "2026-08-20 00:00+0000",
+  "generator": "Lineweb reviewed localization map",
+  "domain": "messages",
+  "locale_data": {
+    "messages": {
+      "": {
+        "domain": "messages",
+        "plural-forms": "nplurals=2; plural=(n != 1);",
+        "lang": "el_GR"
+      },
+      "In stock": [
+        "Σε απόθεμα"
+      ],
+      "Out of stock": [
+        "Εξαντλημένο"
+      ],
+      "Replace image": [
+        "Αντικατάσταση εικόνας"
+      ],
+      "Choose image": [
+        "Επιλογή εικόνας"
+      ],
+      "Remove": [
+        "Αφαίρεση"
+      ],
+      "Choose a published product to preview live data.": [
+        "Επιλέξτε δημοσιευμένο προϊόν για προεπισκόπηση ζωντανών δεδομένων."
+      ],
+      "Write the idea people should remember…": [
+        "Γράψτε την ιδέα που αξίζει να θυμούνται…"
+      ],
+      "Optional source or author": [
+        "Προαιρετική πηγή ή συντάκτης"
+      ],
+      "Card content": [
+        "Περιεχόμενο κάρτας"
+      ],
+      "Card type": [
+        "Τύπος κάρτας"
+      ],
+      "Quote": [
+        "Απόσπασμα"
+      ],
+      "Key takeaway": [
+        "Βασικό συμπέρασμα"
+      ],
+      "Statistic": [
+        "Στατιστικό"
+      ],
+      "WooCommerce product": [
+        "Προϊόν WooCommerce"
+      ],
+      "Small heading": [
+        "Μικρός τίτλος"
+      ],
+      "Activate WooCommerce to use live product cards.": [
+        "Ενεργοποιήστε το WooCommerce για ζωντανές κάρτες προϊόντων."
+      ],
+      "Product": [
+        "Προϊόν"
+      ],
+      "Statistic context": [
+        "Επεξήγηση στατιστικού"
+      ],
+      "Format and style": [
+        "Μορφή και στιλ"
+      ],
+      "Image format": [
+        "Μορφή εικόνας"
+      ],
+      "Style preset": [
+        "Προεπιλογή στιλ"
+      ],
+      "Editorial": [
+        "Editorial"
+      ],
+      "Signal": [
+        "Έμφαση"
+      ],
+      "Minimal": [
+        "Λιτό"
+      ],
+      "Dark": [
+        "Σκούρο"
+      ],
+      "Text alignment": [
+        "Στοίχιση κειμένου"
+      ],
+      "Left": [
+        "Αριστερά"
+      ],
+      "Center": [
+        "Κέντρο"
+      ],
+      "Background": [
+        "Φόντο"
+      ],
+      "Text": [
+        "Κείμενο"
+      ],
+      "Accent": [
+        "Χρώμα έμφασης"
+      ],
+      "Brand and source": [
+        "Brand και πηγή"
+      ],
+      "Show site domain": [
+        "Εμφάνιση domain του site"
+      ],
+      "Show QR code in the PNG": [
+        "Εμφάνιση QR στο PNG"
+      ],
+      "Show logo": [
+        "Εμφάνιση λογοτύπου"
+      ],
+      "Custom logo": [
+        "Προσαρμοσμένο λογότυπο"
+      ],
+      "Card image": [
+        "Εικόνα κάρτας"
+      ],
+      "Sharing actions": [
+        "Ενέργειες κοινοποίησης"
+      ],
+      "Share button label": [
+        "Ετικέτα κουμπιού κοινοποίησης"
+      ],
+      "Download button label": [
+        "Ετικέτα κουμπιού λήψης"
+      ],
+      "Copy button label": [
+        "Ετικέτα κουμπιού αντιγραφής"
+      ],
+      "Custom share caption": [
+        "Προσαρμοσμένη λεζάντα κοινοποίησης"
+      ],
+      "Leave empty to use the card text and source URL.": [
+        "Αφήστε το κενό για χρήση του κειμένου της κάρτας και του URL πηγής."
+      ],
+      "QR code preview": [
+        "Προεπισκόπηση κωδικού QR"
+      ],
+      "Sharing controls preview": [
+        "Προεπισκόπηση χειριστηρίων κοινοποίησης"
+      ],
+      "Buttons become active on the published page. PNG generation stays in the visitor’s browser.": [
+        "Τα κουμπιά ενεργοποιούνται στη δημοσιευμένη σελίδα. Η δημιουργία PNG παραμένει στον browser του επισκέπτη."
+      ]
+    }
+  }
+}

@@ -1,0 +1,142 @@
+name: Quality
+
+on:
+    push:
+        branches: [main]
+        tags: ['*']
+    pull_request:
+
+permissions:
+    contents: read
+
+concurrency:
+    group: ${{ github.workflow }}-${{ github.ref }}
+    cancel-in-progress: true
+
+jobs:
+    static:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v7
+            - uses: actions/setup-node@v7
+              with:
+                  node-version: 22
+                  cache: npm
+            - uses: shivammathur/setup-php@v2
+              with:
+                  php-version: '8.3'
+                  coverage: none
+            - run: sudo apt-get update
+            - run: sudo apt-get install -y gettext
+            - run: npm ci --legacy-peer-deps --no-audit --no-fund
+            - run: npm audit --omit=dev --audit-level=high
+            - run: npm audit --audit-level=critical
+            - run: npm run lint:js
+            - run: npm run lint:css
+            - run: npm run lint:php
+            - run: npm run test:unit
+            - run: npm run build
+            - run: npm run check:rtl
+            - run: git diff --exit-code -- build
+            - run: msgfmt --check -o /dev/null languages/lineweb-share-cards-el_GR.po
+            - run: test -z "$(msgattrib --untranslated languages/lineweb-share-cards-el_GR.po | grep '^msgid ')"
+
+    e2e:
+        strategy:
+            fail-fast: false
+            matrix:
+                theme: [twentytwentyone, twentytwentyfive]
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v7
+            - uses: actions/setup-node@v7
+              with:
+                  node-version: 22
+                  cache: npm
+            - run: npm ci --legacy-peer-deps --no-audit --no-fund
+            - run: npx playwright install --with-deps chromium
+            - run: npm run build
+            - run: node tools/write-ci-wp-env.mjs
+            - run: npm run env:start
+            - run: npm run env:activate
+            - run: npx wp-env run cli wp theme install ${{ matrix.theme }} --activate
+            - run: npx wp-env run cli wp eval-file /var/www/html/wp-content/plugins/lineweb-share-cards/tools/seed-demo-product.php
+            - run: npm run test:e2e
+            - if: failure()
+              uses: actions/upload-artifact@v4
+              with:
+                  name: share-cards-e2e-${{ matrix.theme }}
+                  path: artifacts-share-cards/**
+            - if: always()
+              run: npm run env:stop
+
+    release-zip:
+        needs: static
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v7
+            - uses: actions/setup-node@v7
+              with:
+                  node-version: 22
+                  cache: npm
+            - run: npm ci --legacy-peer-deps --no-audit --no-fund
+            - run: npm run build
+            - run: npm run check:rtl
+            - run: npm run plugin-zip
+            - name: Configure an archive-only WordPress environment
+              env:
+                  WP_ENV_MODE: archive
+              run: node tools/write-ci-wp-env.mjs
+            - run: npm run env:start
+            - run: npx wp-env run cli wp plugin install /var/www/html/wp-content/lineweb-ci/lineweb-share-cards.zip --activate
+            - run: npx wp-env run cli wp plugin install plugin-check --activate
+            - run: npx wp-env run cli wp plugin check lineweb-share-cards
+            - uses: actions/upload-artifact@v4
+              with:
+                  name: lineweb-share-cards-release-candidate
+                  path: lineweb-share-cards.zip
+            - if: always()
+              run: npm run env:stop
+
+    compatibility:
+        needs: static
+        strategy:
+            fail-fast: false
+            matrix:
+                include:
+                    - wordpress: '6.9'
+                      woocommerce: '10.8.1'
+                      php: '8.3'
+                    - wordpress: latest
+                      woocommerce: '10.9.4'
+                      php: '8.3'
+                    - wordpress: latest
+                      woocommerce: '10.9.4'
+                      php: '8.4'
+                    - wordpress: latest
+                      woocommerce: '10.9.4'
+                      php: '8.5'
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v7
+            - uses: actions/setup-node@v7
+              with:
+                  node-version: 22
+                  cache: npm
+            - run: npm ci --legacy-peer-deps --no-audit --no-fund
+            - run: npm run build
+            - name: Configure the WordPress, WooCommerce, and PHP matrix
+              env:
+                  WP_VERSION: ${{ matrix.wordpress }}
+                  WOO_VERSION: ${{ matrix.woocommerce }}
+                  PHP_VERSION: ${{ matrix.php }}
+              run: node tools/write-ci-wp-env.mjs
+            - run: npm run env:start
+            - run: npm run env:activate
+            - run: npx wp-env run cli wp plugin status lineweb-share-cards
+            - name: Verify server-side block registration
+              run: >-
+                  npx wp-env run cli wp eval
+                  'if ( ! WP_Block_Type_Registry::get_instance()->is_registered( "lineweb-share-cards/share-card" ) ) { exit( 1 ); } echo "registered\n";'
+            - if: always()
+              run: npm run env:stop

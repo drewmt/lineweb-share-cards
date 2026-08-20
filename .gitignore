@@ -1,0 +1,10 @@
+node_modules/
+artifacts/
+artifacts-commerce/
+artifacts-checkout-gr/
+artifacts-share-cards/
+coverage/
+.wp-env.json
+test-results/
+*.zip
+.DS_Store

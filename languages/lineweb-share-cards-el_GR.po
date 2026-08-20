@@ -1,0 +1,469 @@
+# Greek translation maintained by Lineweb <info@lineweb.gr>.
+msgid ""
+msgstr ""
+"Project-Id-Version: Lineweb Share Cards 0.1.0\n"
+"Report-Msgid-Bugs-To: info@lineweb.gr\n"
+"POT-Creation-Date: 2026-08-20 00:00+0000\n"
+"PO-Revision-Date: 2026-08-20 00:00+0000\n"
+"Last-Translator: Lineweb <info@lineweb.gr>\n"
+"Language-Team: Greek\n"
+"Language: el_GR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lineweb reviewed localization map\n"
+
+#: lineweb-share-cards.php:50
+msgid "Lineweb"
+msgstr "Lineweb"
+
+#: includes/admin-page.php:13 includes/admin-page.php:103
+msgid "Lineweb Share Cards"
+msgstr "Lineweb Share Cards"
+
+#: includes/admin-page.php:14
+msgid "Share Cards"
+msgstr "Κάρτες κοινοποίησης"
+
+#: includes/admin-page.php:71
+msgid "Create share card"
+msgstr "Δημιουργία κάρτας"
+
+#: includes/admin-page.php:95
+msgid "You do not have permission to access this page."
+msgstr "Δεν έχετε δικαίωμα πρόσβασης σε αυτή τη σελίδα."
+
+#: includes/admin-page.php:104
+msgid "Turn the useful part of a page into an image people can carry with them."
+msgstr ""
+"Μετατρέψτε το χρήσιμο μέρος μιας σελίδας σε εικόνα που οι επισκέπτες "
+"μπορούν να κρατήσουν."
+
+#: includes/admin-page.php:105
+msgid ""
+"Add one Gutenberg block, choose a practical format, and let visitors create "
+"a branded PNG without an account, external API, or tracking."
+msgstr ""
+"Προσθέστε ένα block του Gutenberg, επιλέξτε πρακτική μορφή και αφήστε τους "
+"επισκέπτες να δημιουργήσουν επώνυμο PNG χωρίς λογαριασμό, εξωτερικό API ή "
+"παρακολούθηση."
+
+#: includes/admin-page.php:107
+msgid "Create on a page"
+msgstr "Δημιουργία σε σελίδα"
+
+#: includes/admin-page.php:108
+msgid "Create in a post"
+msgstr "Δημιουργία σε άρθρο"
+
+#: includes/admin-page.php:111
+msgid "Plugin status"
+msgstr "Κατάσταση plugin"
+
+#: includes/admin-page.php:112 includes/admin-page.php:154
+msgid "Lineweb — Creative Digital Agency"
+msgstr "Lineweb — Δημιουργικό Ψηφιακό Γραφείο"
+
+#: includes/admin-page.php:114
+msgid "Share Cards is active"
+msgstr "Το Share Cards είναι ενεργό"
+
+#: includes/admin-page.php:115
+#. translators: %s: plugin version.
+#, php-format
+msgid "Version %s · Local PNG generation"
+msgstr "Έκδοση %s · Τοπική δημιουργία PNG"
+
+#: includes/admin-page.php:120
+msgid "Plugin summary"
+msgstr "Σύνοψη plugin"
+
+#: includes/admin-page.php:121
+msgid "practical card types"
+msgstr "πρακτικοί τύποι καρτών"
+
+#: includes/admin-page.php:122
+msgid "exact social formats"
+msgstr "ακριβείς μορφές social"
+
+#: includes/admin-page.php:123
+msgid "accounts or external requests"
+msgstr "λογαριασμοί ή εξωτερικά αιτήματα"
+
+#: includes/admin-page.php:128
+msgid "What you can publish"
+msgstr "Τι μπορείτε να δημοσιεύσετε"
+
+#: includes/admin-page.php:129
+msgid ""
+"Every option remains readable without JavaScript. JavaScript is used only "
+"when a visitor creates, shares, downloads, or copies."
+msgstr ""
+"Κάθε επιλογή παραμένει αναγνώσιμη χωρίς JavaScript. Η JavaScript "
+"χρησιμοποιείται μόνο όταν ένας επισκέπτης δημιουργεί, κοινοποιεί, κατεβάζει "
+"ή αντιγράφει."
+
+#: includes/admin-page.php:133
+msgid "Posts and pages"
+msgstr "Άρθρα και σελίδες"
+
+#: includes/admin-page.php:133
+msgid "Quote or key takeaway"
+msgstr "Απόσπασμα ή βασικό συμπέρασμα"
+
+#: includes/admin-page.php:133
+msgid ""
+"Make the strongest idea in an article easy to save and share with its "
+"source URL."
+msgstr ""
+"Κάντε την πιο δυνατή ιδέα ενός άρθρου εύκολη στην αποθήκευση και "
+"κοινοποίηση μαζί με το URL της πηγής."
+
+#: includes/admin-page.php:134
+msgid "Reports and case studies"
+msgstr "Αναφορές και μελέτες περίπτωσης"
+
+#: includes/admin-page.php:134
+msgid "Statistic with context"
+msgstr "Στατιστικό με επεξήγηση"
+
+#: includes/admin-page.php:134
+msgid "Pair one honest number with the sentence needed to understand what it means."
+msgstr ""
+"Συνδυάστε έναν πραγματικό αριθμό με την πρόταση που χρειάζεται για να γίνει "
+"κατανοητός."
+
+#: includes/admin-page.php:135
+msgid "WooCommerce active"
+msgstr "Το WooCommerce είναι ενεργό"
+
+#: includes/admin-page.php:135
+msgid "Optional WooCommerce"
+msgstr "Προαιρετικό WooCommerce"
+
+#: includes/admin-page.php:135
+msgid "Live product highlight"
+msgstr "Ζωντανή προβολή προϊόντος"
+
+#: includes/admin-page.php:135
+msgid ""
+"Select a product and keep its title, price, availability, image, and link "
+"current."
+msgstr ""
+"Επιλέξτε ένα προϊόν και διατηρήστε ενημερωμένα τον τίτλο, την τιμή, τη "
+"διαθεσιμότητα, την εικόνα και τον σύνδεσμό του."
+
+#: includes/admin-page.php:136
+msgid "Visitor action"
+msgstr "Ενέργεια επισκέπτη"
+
+#: includes/admin-page.php:136
+msgid "Share, download, or copy"
+msgstr "Κοινοποίηση, λήψη ή αντιγραφή"
+
+#: includes/admin-page.php:136
+msgid ""
+"Use the native share sheet when image files are supported, with a clear PNG "
+"fallback."
+msgstr ""
+"Χρησιμοποιήστε το εγγενές μενού κοινοποίησης όταν υποστηρίζονται αρχεία "
+"εικόνας, με σαφή εναλλακτική λήψη PNG."
+
+#: includes/admin-page.php:143
+msgid "A three-step workflow"
+msgstr "Ροή τριών βημάτων"
+
+#: includes/admin-page.php:144
+msgid "Search the inserter for “Shareable Quote & Social Card”."
+msgstr "Αναζητήστε στον inserter το «Shareable Quote & Social Card»."
+
+#: includes/admin-page.php:147
+msgid "Choose the useful part"
+msgstr "Επιλέξτε το χρήσιμο μέρος"
+
+#: includes/admin-page.php:147
+msgid "Use a quote, takeaway, statistic, or one real product."
+msgstr "Χρησιμοποιήστε απόσπασμα, συμπέρασμα, στατιστικό ή ένα πραγματικό προϊόν."
+
+#: includes/admin-page.php:148
+msgid "Apply site branding"
+msgstr "Εφαρμόστε το branding του site"
+
+#: includes/admin-page.php:148
+msgid "Set the format, colors, logo, domain, image, and optional source QR."
+msgstr ""
+"Ορίστε τη μορφή, τα χρώματα, το λογότυπο, το domain, την εικόνα και "
+"προαιρετικό QR της πηγής."
+
+#: includes/admin-page.php:149
+msgid "Publish normally"
+msgstr "Δημοσιεύστε κανονικά"
+
+#: includes/admin-page.php:149
+msgid "Visitors use the controls on the page. Nothing is sent to Lineweb."
+msgstr ""
+"Οι επισκέπτες χρησιμοποιούν τα χειριστήρια στη σελίδα. Τίποτα δεν "
+"αποστέλλεται στη Lineweb."
+
+#: includes/admin-page.php:155
+msgid "A free, self-contained WordPress tool."
+msgstr "Ένα δωρεάν, αυτόνομο εργαλείο WordPress."
+
+#: includes/admin-page.php:155
+msgid ""
+"No telemetry, no account, no automatic posting, and no forced public "
+"Lineweb credit."
+msgstr ""
+"Χωρίς τηλεμετρία, λογαριασμό, αυτόματες δημοσιεύσεις ή υποχρεωτική δημόσια "
+"αναφορά στη Lineweb."
+
+#: includes/admin-page.php:156
+msgid "Support"
+msgstr "Υποστήριξη"
+
+#: src/share-card/render.php:36
+msgid "This Share Card needs a published, catalog-visible WooCommerce product."
+msgstr ""
+"Αυτή η κάρτα χρειάζεται δημοσιευμένο προϊόν WooCommerce που εμφανίζεται "
+"στον κατάλογο."
+
+#: src/share-card/render.php:45 src/share-card/edit.js:122
+msgid "In stock"
+msgstr "Σε απόθεμα"
+
+#: src/share-card/render.php:45 src/share-card/edit.js:123
+msgid "Out of stock"
+msgstr "Εξαντλημένο"
+
+#: src/share-card/render.php:78
+msgid "Share image"
+msgstr "Κοινοποίηση εικόνας"
+
+#: src/share-card/render.php:79
+msgid "Download PNG"
+msgstr "Λήψη PNG"
+
+#: src/share-card/render.php:80
+msgid "Copy caption"
+msgstr "Αντιγραφή λεζάντας"
+
+#: src/share-card/render.php:106
+msgid "Creating your PNG…"
+msgstr "Δημιουργία του PNG…"
+
+#: src/share-card/render.php:107
+msgid "Share sheet opened."
+msgstr "Άνοιξε το μενού κοινοποίησης."
+
+#: src/share-card/render.php:108
+msgid "PNG downloaded."
+msgstr "Έγινε λήψη του PNG."
+
+#: src/share-card/render.php:109
+msgid "Caption copied."
+msgstr "Η λεζάντα αντιγράφηκε."
+
+#: src/share-card/render.php:110
+msgid "Image sharing is not available here, so the PNG was downloaded instead."
+msgstr "Η κοινοποίηση εικόνας δεν είναι διαθέσιμη εδώ, οπότε έγινε λήψη του PNG."
+
+#: src/share-card/render.php:111
+msgid "Copy is not available in this browser."
+msgstr "Η αντιγραφή δεν είναι διαθέσιμη σε αυτόν τον browser."
+
+#: src/share-card/render.php:112
+msgid "The PNG could not be created. Try downloading again."
+msgstr "Δεν ήταν δυνατή η δημιουργία του PNG. Δοκιμάστε ξανά τη λήψη."
+
+#: src/share-card/render.php:144
+msgid "View product"
+msgstr "Προβολή προϊόντος"
+
+#: src/share-card/render.php:161
+msgid "Share this card"
+msgstr "Κοινοποίηση αυτής της κάρτας"
+
+#: src/share-card/edit.js:75
+msgid "Replace image"
+msgstr "Αντικατάσταση εικόνας"
+
+#: src/share-card/edit.js:79
+msgid "Choose image"
+msgstr "Επιλογή εικόνας"
+
+#: src/share-card/edit.js:93
+msgid "Remove"
+msgstr "Αφαίρεση"
+
+#: src/share-card/edit.js:105
+msgid "Choose a published product to preview live data."
+msgstr "Επιλέξτε δημοσιευμένο προϊόν για προεπισκόπηση ζωντανών δεδομένων."
+
+#: src/share-card/edit.js:174
+msgid "Write the idea people should remember…"
+msgstr "Γράψτε την ιδέα που αξίζει να θυμούνται…"
+
+#: src/share-card/edit.js:185
+msgid "Optional source or author"
+msgstr "Προαιρετική πηγή ή συντάκτης"
+
+#: src/share-card/edit.js:199
+msgid "Card content"
+msgstr "Περιεχόμενο κάρτας"
+
+#: src/share-card/edit.js:204
+msgid "Card type"
+msgstr "Τύπος κάρτας"
+
+#: src/share-card/edit.js:208
+msgid "Quote"
+msgstr "Απόσπασμα"
+
+#: src/share-card/edit.js:212
+msgid "Key takeaway"
+msgstr "Βασικό συμπέρασμα"
+
+#: src/share-card/edit.js:219 src/share-card/edit.js:276
+msgid "Statistic"
+msgstr "Στατιστικό"
+
+#: src/share-card/edit.js:223
+msgid "WooCommerce product"
+msgstr "Προϊόν WooCommerce"
+
+#: src/share-card/edit.js:234 src/share-card/edit.js:527
+msgid "Small heading"
+msgstr "Μικρός τίτλος"
+
+#: src/share-card/edit.js:240
+msgid "Activate WooCommerce to use live product cards."
+msgstr "Ενεργοποιήστε το WooCommerce για ζωντανές κάρτες προϊόντων."
+
+#: src/share-card/edit.js:250
+msgid "Product"
+msgstr "Προϊόν"
+
+#: src/share-card/edit.js:287
+msgid "Statistic context"
+msgstr "Επεξήγηση στατιστικού"
+
+#: src/share-card/edit.js:300
+msgid "Format and style"
+msgstr "Μορφή και στιλ"
+
+#: src/share-card/edit.js:304
+msgid "Image format"
+msgstr "Μορφή εικόνας"
+
+#: src/share-card/edit.js:321
+msgid "Style preset"
+msgstr "Προεπιλογή στιλ"
+
+#: src/share-card/edit.js:325
+msgid "Editorial"
+msgstr "Editorial"
+
+#: src/share-card/edit.js:329
+msgid "Signal"
+msgstr "Έμφαση"
+
+#: src/share-card/edit.js:333
+msgid "Minimal"
+msgstr "Λιτό"
+
+#: src/share-card/edit.js:337
+msgid "Dark"
+msgstr "Σκούρο"
+
+#: src/share-card/edit.js:350
+msgid "Text alignment"
+msgstr "Στοίχιση κειμένου"
+
+#: src/share-card/edit.js:354
+msgid "Left"
+msgstr "Αριστερά"
+
+#: src/share-card/edit.js:358
+msgid "Center"
+msgstr "Κέντρο"
+
+#: src/share-card/edit.js:368
+msgid "Background"
+msgstr "Φόντο"
+
+#: src/share-card/edit.js:379
+msgid "Text"
+msgstr "Κείμενο"
+
+#: src/share-card/edit.js:390
+msgid "Accent"
+msgstr "Χρώμα έμφασης"
+
+#: src/share-card/edit.js:402
+msgid "Brand and source"
+msgstr "Brand και πηγή"
+
+#: src/share-card/edit.js:405
+msgid "Show site domain"
+msgstr "Εμφάνιση domain του site"
+
+#: src/share-card/edit.js:415
+msgid "Show QR code in the PNG"
+msgstr "Εμφάνιση QR στο PNG"
+
+#: src/share-card/edit.js:423
+msgid "Show logo"
+msgstr "Εμφάνιση λογοτύπου"
+
+#: src/share-card/edit.js:431
+msgid "Custom logo"
+msgstr "Προσαρμοσμένο λογότυπο"
+
+#: src/share-card/edit.js:444
+msgid "Card image"
+msgstr "Εικόνα κάρτας"
+
+#: src/share-card/edit.js:457
+msgid "Sharing actions"
+msgstr "Ενέργειες κοινοποίησης"
+
+#: src/share-card/edit.js:461
+msgid "Share button label"
+msgstr "Ετικέτα κουμπιού κοινοποίησης"
+
+#: src/share-card/edit.js:472
+msgid "Download button label"
+msgstr "Ετικέτα κουμπιού λήψης"
+
+#: src/share-card/edit.js:483
+msgid "Copy button label"
+msgstr "Ετικέτα κουμπιού αντιγραφής"
+
+#: src/share-card/edit.js:494
+msgid "Custom share caption"
+msgstr "Προσαρμοσμένη λεζάντα κοινοποίησης"
+
+#: src/share-card/edit.js:498
+msgid "Leave empty to use the card text and source URL."
+msgstr "Αφήστε το κενό για χρήση του κειμένου της κάρτας και του URL πηγής."
+
+#: src/share-card/edit.js:544
+msgid "QR code preview"
+msgstr "Προεπισκόπηση κωδικού QR"
+
+#: src/share-card/edit.js:557
+msgid "Sharing controls preview"
+msgstr "Προεπισκόπηση χειριστηρίων κοινοποίησης"
+
+#: src/share-card/edit.js:573
+msgid ""
+"Buttons become active on the published page. PNG generation stays in the "
+"visitor’s browser."
+msgstr ""
+"Τα κουμπιά ενεργοποιούνται στη δημοσιευμένη σελίδα. Η δημιουργία PNG "
+"παραμένει στον browser του επισκέπτη."
+
+#: src/shared/product-catalog.js:46
+msgid "WooCommerce products could not be loaded."
+msgstr "Δεν ήταν δυνατή η φόρτωση των προϊόντων WooCommerce."

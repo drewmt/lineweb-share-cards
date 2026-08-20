@@ -1,0 +1,73 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "lineweb-share-cards/share-card",
+	"version": "0.1.0",
+	"title": "Shareable Quote & Social Card",
+	"category": "lineweb",
+	"icon": "share",
+	"description": "Turn a quote, takeaway, statistic, or WooCommerce product into a branded PNG visitors can share.",
+	"keywords": [ "quote", "social", "image", "share", "product" ],
+	"textdomain": "lineweb-share-cards",
+	"attributes": {
+		"mode": {
+			"type": "string",
+			"enum": [ "quote", "takeaway", "statistic", "product" ],
+			"default": "quote"
+		},
+		"ratio": {
+			"type": "string",
+			"enum": [ "square", "portrait", "landscape" ],
+			"default": "square"
+		},
+		"theme": {
+			"type": "string",
+			"enum": [ "editorial", "signal", "minimal", "dark" ],
+			"default": "editorial"
+		},
+		"eyebrow": { "type": "string", "default": "Worth sharing" },
+		"content": {
+			"type": "string",
+			"default": "A useful idea should be easy to remember and simple to share."
+		},
+		"source": { "type": "string", "default": "" },
+		"statistic": { "type": "string", "default": "3×" },
+		"statisticLabel": {
+			"type": "string",
+			"default": "the result when clarity becomes part of the process"
+		},
+		"productId": { "type": "number", "default": 0 },
+		"mediaId": { "type": "number", "default": 0 },
+		"mediaUrl": { "type": "string", "default": "" },
+		"mediaAlt": { "type": "string", "default": "" },
+		"logoId": { "type": "number", "default": 0 },
+		"logoUrl": { "type": "string", "default": "" },
+		"backgroundColor": { "type": "string", "default": "#f4efe9" },
+		"textColor": { "type": "string", "default": "#1b1715" },
+		"accentColor": { "type": "string", "default": "#d64a31" },
+		"textAlign": {
+			"type": "string",
+			"enum": [ "left", "center" ],
+			"default": "left"
+		},
+		"showDomain": { "type": "boolean", "default": true },
+		"showQr": { "type": "boolean", "default": false },
+		"showLogo": { "type": "boolean", "default": true },
+		"buttonLabel": { "type": "string", "default": "Share image" },
+		"downloadLabel": { "type": "string", "default": "Download PNG" },
+		"copyLabel": { "type": "string", "default": "Copy caption" },
+		"caption": { "type": "string", "default": "" }
+	},
+	"supports": {
+		"align": [ "wide", "full" ],
+		"anchor": true,
+		"html": false,
+		"spacing": { "margin": true }
+	},
+	"example": { "viewportWidth": 900 },
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScriptModule": "file:./view.js",
+	"render": "file:./render.php"
+}
