@@ -6,7 +6,7 @@ return array(
 		'$schema' => 'https://schemas.wp.org/trunk/block.json',
 		'apiVersion' => 3,
 		'name' => 'lineweb-share-cards/share-card',
-		'version' => '0.1.0',
+		'version' => '0.2.0',
 		'title' => 'Shareable Quote & Social Card',
 		'category' => 'lineweb',
 		'icon' => 'share',
@@ -35,7 +35,8 @@ return array(
 				'enum' => array(
 					'square',
 					'portrait',
-					'landscape'
+					'landscape',
+					'story'
 				),
 				'default' => 'square'
 			),
@@ -52,6 +53,15 @@ return array(
 			'eyebrow' => array(
 				'type' => 'string',
 				'default' => 'Worth sharing'
+			),
+			'font' => array(
+				'type' => 'string',
+				'enum' => array(
+					'sans',
+					'serif',
+					'mono'
+				),
+				'default' => 'sans'
 			),
 			'content' => array(
 				'type' => 'string',

@@ -1,0 +1,44 @@
+{
+  "translation-revision-date": "2026-09-08 00:00+0000",
+  "generator": "Lineweb reviewed localization map",
+  "domain": "messages",
+  "locale_data": {
+    "messages": {
+      "": {
+        "domain": "messages",
+        "plural-forms": "nplurals=2; plural=(n != 1);",
+        "lang": "el"
+      },
+      "PNG downloaded.": [
+        "Έγινε λήψη του PNG."
+      ],
+      "Some text was shortened to fit. Shorten the headline or choose a taller format.": [
+        "Μέρος του κειμένου συντομεύτηκε για να χωρέσει. Μικρύνετε τον τίτλο ή επιλέξτε ψηλότερη μορφή."
+      ],
+      "Preview ready. Your download will match this image.": [
+        "Η προεπισκόπηση είναι έτοιμη. Θα κατεβάσετε ακριβώς αυτή την εικόνα."
+      ],
+      "Preview could not be created. Choose a Media Library image that this browser can load, then try again.": [
+        "Δεν ήταν δυνατή η προεπισκόπηση. Επιλέξτε μια εικόνα από τη Βιβλιοθήκη πολυμέσων που μπορεί να φορτώσει ο browser και δοκιμάστε ξανά."
+      ],
+      "Brand defaults saved for future cards.": [
+        "Οι προεπιλογές ταυτότητας αποθηκεύτηκαν για μελλοντικές κάρτες."
+      ],
+      "Brand defaults could not be saved. Reload the page and try again.": [
+        "Δεν αποθηκεύτηκαν οι προεπιλογές ταυτότητας. Ανανεώστε τη σελίδα και δοκιμάστε ξανά."
+      ],
+      "Preparing image %d of 4…": [
+        "Προετοιμασία εικόνας %d από 4…"
+      ],
+      "ZIP downloaded. Text was shortened in some formats; review each image before posting.": [
+        "Το ZIP κατέβηκε. Το κείμενο συντομεύτηκε σε ορισμένες μορφές. Ελέγξτε κάθε εικόνα πριν τη δημοσίευση."
+      ],
+      "All four formats downloaded in one ZIP.": [
+        "Και οι τέσσερις μορφές κατέβηκαν σε ένα ZIP."
+      ],
+      "Export failed. Please try again.": [
+        "Η εξαγωγή απέτυχε. Δοκιμάστε ξανά."
+      ]
+    }
+  }
+}

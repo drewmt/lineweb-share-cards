@@ -4,15 +4,19 @@ Tags: social share, quote image, social card, gutenberg, woocommerce
 Requires at least: 6.9
 Tested up to: 7.1
 Requires PHP: 8.3
-Stable tag: 0.1.0
+Stable tag: 0.2.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Create branded quote images, takeaway cards, statistic graphics, and live WooCommerce product PNGs directly in Gutenberg.
+Create branded social images from posts and products, export four sizes in one ZIP, and add shareable quote cards in Gutenberg.
 
 == Description ==
 
-Lineweb Share Cards adds one practical Gutenberg block for content that people may want to save or share as an image.
+Lineweb Share Cards adds a Social Image Studio and one practical Gutenberg block for content that people may want to save or share as an image.
+
+Open Share Cards → Image Studio or use Create social image on a published article, page, or visible WooCommerce product. The studio prefills the title, image, source URL, and current product price/availability. Editing the card never changes its source.
+
+Choose Editorial, Split frame, Photo poster, or Type focus. Customize the copy, logo, colors, alignment, and local system font. Download the exact preview as PNG or all four formats in one ZIP. Administrators can save brand defaults; existing blocks keep their own settings until an editor chooses Apply saved brand.
 
 Card types:
 
@@ -21,7 +25,7 @@ Card types:
 * Statistic paired with the context needed to understand it.
 * One manually selected WooCommerce product with live title, price, availability, image, and link.
 
-Choose square 1080 × 1080, portrait 1080 × 1350, or landscape 1200 × 630 output. Apply a restrained preset, site colors, optional logo, domain, source-page QR code, and image.
+Choose square 1080 × 1080, portrait 1080 × 1350, landscape 1200 × 630, or Story 1080 × 1920 output. Apply a preset, site colors, optional logo, domain, source-page QR code, and image.
 
 On the published page, visitors can use native image sharing where their browser supports file sharing, download the PNG, or copy a source-aware caption. When file sharing is unavailable, the share action downloads the PNG and explains the fallback.
 
@@ -45,8 +49,18 @@ WooCommerce is optional. Quote, takeaway, and statistic cards work without it. P
 3. Published desktop quote card with source QR plus share, PNG download, and caption-copy controls.
 4. Responsive 375-pixel quote card with readable content and full-width 44-pixel actions.
 5. Published WooCommerce product card using a synthetic product's live title, price, stock state, image, and link.
+6. Social Image Studio with a product source, reusable brand controls, exact preview, and PNG or ZIP export.
+7. Social Image Studio on a narrow mobile screen, using only synthetic demonstration content.
 
 == Frequently Asked Questions ==
+
+= Does the studio change my articles or products? =
+
+No. It prefills a new image from a published, non-password-protected source the current user can edit. Product sources must also be catalog-visible. This is a snapshot when the studio opens, not a live image after download. Reopen the studio to refresh source data, and review text and prices before posting. Image drafts and generated files are not saved on the server.
+
+= What if text is too long or an image cannot load? =
+
+The studio warns when it shortens text to fit. A missing or browser-blocked selected image prevents export until you remove or replace it. Review every image in a multi-format ZIP before posting. Photo poster uses white text on a dark overlay; Type focus omits the selected image.
 
 = Does the plugin post to social networks? =
 
@@ -82,7 +96,7 @@ Browsers do not allow Canvas to export an image from another domain unless that 
 
 == Privacy ==
 
-The plugin stores block settings inside normal WordPress post content. It does not store visitor interactions or generated images. No telemetry, tracking, account, or Lineweb request is added.
+The plugin stores block settings inside normal WordPress post content and administrator-saved brand defaults in its own WordPress option. It does not store visitor interactions, studio image drafts, or generated images. No telemetry, tracking, account, or Lineweb request is added.
 
 == Third-party notice ==
 
@@ -103,6 +117,13 @@ For support, use https://lineweb.gr/contact/ and include the plugin version, Wor
 Report suspected vulnerabilities privately through https://lineweb.gr/contact/. Do not publish credentials or customer data.
 
 == Changelog ==
+
+= 0.2.0 =
+
+* Social Image Studio with article, page, and WooCommerce product sources.
+* Four layouts, exact preview, single PNG and four-format ZIP export.
+* Story 1080 × 1920, saved brand defaults, and local system fonts.
+* Source permissions, image error handling, text-fit warnings, Greek translations, and mobile screenshots.
 
 = 0.1.0 =
 

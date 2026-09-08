@@ -3,7 +3,7 @@
   "files": [
     {
       "path": ".github/workflows/quality.yml",
-      "sha256": "04c9413cf737cdb6475b0ddd65e3ae2fef4e8d407a92c07b5959bfec28d1c613"
+      "sha256": "b513cb4d05d973a79d4c7ba845c6f6c06ab6b5ff6ef212028d33f9a2993c61ab"
     },
     {
       "path": ".gitignore",
@@ -11,7 +11,7 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "f15225c15d73de20b20e1e76c8dea3ebc450e8472b485c541e50b988099c6b8d"
+      "sha256": "7b3f4acf2e22dcb50d1045a2bb2f0f50077862fbed52810e1703fe0584694ee8"
     },
     {
       "path": "LICENSE",
@@ -19,7 +19,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "232abc0ce10489e9c9f191ab8c66892db1a5a21fc4d5ee40197bcdd54654b9ab"
+      "sha256": "03cb9c0d45fcc2703f9d52cf302297c905dc6e5fb5f52503e58909b43a8ea9e8"
     },
     {
       "path": "SECURITY.md",
@@ -39,11 +39,11 @@
     },
     {
       "path": "build/blocks-manifest.php",
-      "sha256": "3e373e30f3ef32bdb214dc4ba00adf72f3103683cda5f90e0f95734b62e47d2d"
+      "sha256": "79b51ddc92609dcb5d217c8ba361659502b8ba79fddb85bb15acbb64f7a90ddf"
     },
     {
       "path": "build/share-card/block.json",
-      "sha256": "0a11fc832a2d429f414d52c7ab69f537dee7bff6ab9dbe9f8afe1749e3b83f63"
+      "sha256": "9b7c8ce2a684dc164374b7d38eef123be3cb2df2e0afc79889b36dcf76ad3ccb"
     },
     {
       "path": "build/share-card/index-rtl.css",
@@ -51,7 +51,7 @@
     },
     {
       "path": "build/share-card/index.asset.php",
-      "sha256": "b998000e377a447284c96f002a00f14e7350fa6fb8146697e1261b0b7392e661"
+      "sha256": "3a00c319682b48723254622dbd80a8c01e06ee46709b7bdedf9083ed48b277bc"
     },
     {
       "path": "build/share-card/index.css",
@@ -59,63 +59,107 @@
     },
     {
       "path": "build/share-card/index.js",
-      "sha256": "b921d978c986640daeb7880821b223f2eeb7b26e3ae9242676b3c0ab66538d8e"
+      "sha256": "89ba5414b3228fbb21c3cf0a2182c9bc3e50a8c3f0c4e30b92fe78e93b461761"
     },
     {
       "path": "build/share-card/render.php",
-      "sha256": "503227ee4b74f509e28f59de2df4dcba7657c21353f6d26699d6bd31499ee4ff"
+      "sha256": "ac20606fd65919a10b1650374fd01e6e6d8265c60801eba34fea761eed4e4d05"
     },
     {
       "path": "build/share-card/style-index-rtl.css",
-      "sha256": "f04a278a2dac4ff10c29a15340b1331466f3f0a92e9b040fc717ca131fb527b1"
+      "sha256": "3f3f6969380f1ed6a9c6cb22d6afd09b4b7350e004d2bda9ad33bee717639fb3"
     },
     {
       "path": "build/share-card/style-index.css",
-      "sha256": "f04a278a2dac4ff10c29a15340b1331466f3f0a92e9b040fc717ca131fb527b1"
+      "sha256": "3f3f6969380f1ed6a9c6cb22d6afd09b4b7350e004d2bda9ad33bee717639fb3"
     },
     {
       "path": "build/share-card/view.asset.php",
-      "sha256": "6321c7481159fdb07c9f8a0e8df98aa16a41fe225421705f2c209e9c515d6f27"
+      "sha256": "a8674f317928bb56961f5b9e7bac3a0a9e289ebdd1bf787b35eb00d76b9bb299"
     },
     {
       "path": "build/share-card/view.js",
-      "sha256": "6182e863c03c5a9734b3bbcecc1a32f4e5182f2855cf52309d6d8cff2b96d9d0"
+      "sha256": "88ab0c4ed82fc5d5a8e3d0295eae129a23c5e67a46b0b9df8df7624321a4ca44"
+    },
+    {
+      "path": "build/studio/index-rtl.css",
+      "sha256": "75b20b35eb127cd83cf88a472ca578b7168efff04c84bcad8cba13c333bbb146"
+    },
+    {
+      "path": "build/studio/index.asset.php",
+      "sha256": "ed64fe93538c213a72a4a45365aa226519415ac3b2a083aa3f54999eb4922e67"
+    },
+    {
+      "path": "build/studio/index.css",
+      "sha256": "c04b1dc9cd17cb9fa1917ba5850acb739383b0010b7e9410ed824e64f4b036b5"
+    },
+    {
+      "path": "build/studio/index.js",
+      "sha256": "c1139308fbf3e3dce2f75fb010614294112809b0af8516847ba30a50e6225a28"
     },
     {
       "path": "includes/admin-page.php",
-      "sha256": "1bf62c01b9661a9c479b997e534ee86f8d2bde6c81ab274eb064907f5f3bd632"
+      "sha256": "723c9a8a9289bdafb7c251abfb841fa870d505865c559111e3704a83d5a1eff0"
     },
     {
       "path": "includes/block-helpers.php",
-      "sha256": "37ec3f4631efe1dd4658e0081781d20f7f254549e1e641447f182d58b3c5d490"
+      "sha256": "9961845e3ce047081c6283d67db741fc34bf5dc15a80d495038569cf1bde5d79"
+    },
+    {
+      "path": "includes/studio-data.php",
+      "sha256": "1017372e1fe2bef00ad95dc2dd042012f4b6fc4b256c20404fcb9c167123270e"
+    },
+    {
+      "path": "includes/studio-page.php",
+      "sha256": "6fe42def465fd4f4f7e58f544bef2a13a2f449713f15e7f782cfd1be1fd3a1b9"
+    },
+    {
+      "path": "languages/lineweb-share-cards-el-lineweb-share-cards-share-card-editor-script.json",
+      "sha256": "320bd39c6e2523faea0ed351d3a7213616035d251afb3d5151e9fc2a9fd773f5"
+    },
+    {
+      "path": "languages/lineweb-share-cards-el-lineweb-share-cards-studio.json",
+      "sha256": "14f994516b68922beb671f0583cc1b93a1cb02f81bee8fca3566a7dcdf3784c0"
+    },
+    {
+      "path": "languages/lineweb-share-cards-el.mo",
+      "sha256": "b1b25d837c16dd47eacf82896939d424b52db5307aec38d33144d69470ea129d"
+    },
+    {
+      "path": "languages/lineweb-share-cards-el.po",
+      "sha256": "a8510b3014b2c963359440dd83113fe2c411a4e3b6b8b3457fc51a9b710bbc6c"
     },
     {
       "path": "languages/lineweb-share-cards-el_GR-lineweb-share-cards-share-card-editor-script.json",
-      "sha256": "49cf58ec2486ad7916c9395b9f2e36b19a5fdde650b6e548b1ffc52371554971"
+      "sha256": "d7f3b0a1ecc29c6b54f0e361bdbe0ad6edbfb7873b94eda79ad46a32c4c80391"
+    },
+    {
+      "path": "languages/lineweb-share-cards-el_GR-lineweb-share-cards-studio.json",
+      "sha256": "e4ccce9ef387ebc20b354b24ce3128d1c01fbb8d9fb65b09e5e17c7565ca4fc8"
     },
     {
       "path": "languages/lineweb-share-cards-el_GR.mo",
-      "sha256": "dce5176d3e5e5b3daa340ef3a318d0f381e197aee393ecc68116de179a8d4435"
+      "sha256": "d5ac020d890b81a2934184cc05f5022f0e276fc482941ae7f6206e0eb319054c"
     },
     {
       "path": "languages/lineweb-share-cards-el_GR.po",
-      "sha256": "6f26b790cd07cd2314bb8023e6424973c423da7bcb7acc9b8b24916a6803431f"
+      "sha256": "dba20066b50a045e153e8d8eb531552839012d88c72150249f23d871227b2129"
     },
     {
       "path": "languages/lineweb-share-cards.pot",
-      "sha256": "bb55fa495aa182944d69bc281f005cd765d3a5ecd2af0b155526281132b9a71d"
+      "sha256": "db55126ad297190ebad9167d397d6815459e202366211ef9b7a3d2e727ed56ed"
     },
     {
       "path": "lineweb-share-cards.php",
-      "sha256": "40ba384df94d5280e2a27ade70967394f41bfc0559c1fd04e44db2b67eaef6fa"
+      "sha256": "8bd442732324ccbd62c1e437059a5fad27925ea7b87af78374eada734464bc29"
     },
     {
       "path": "package-lock.json",
-      "sha256": "b57555f3fc32f48e2176bbedba214c55cb1ff4adefae7841116cca7af74aecad"
+      "sha256": "1d12e0c7a4b8e58b403dc6f7f859abe11b1ea18f60aa63bccf937e81a1c121ec"
     },
     {
       "path": "package.json",
-      "sha256": "2825feb025a383c70a1094d793842e6df6eb59417adc5f440f2e97dc24ce5a23"
+      "sha256": "c17736952237e76fcfd586c32622d61da45310bceb3da69079ebfe9209fc5f39"
     },
     {
       "path": "playwright.config.ts",
@@ -123,7 +167,7 @@
     },
     {
       "path": "readme.txt",
-      "sha256": "428184e17dc4a84121f3d1125d88e20ad4e8e77f4010d99b403db86c7b1cb5c9"
+      "sha256": "de27612b7bf2d6a87d4f589945f9b9f8df237d8937ba5617707c086e735b3900"
     },
     {
       "path": "specs/browser-problems.ts",
@@ -134,12 +178,24 @@
       "sha256": "e609c9b07a09519a3b2332c06ca328d4e5b5e1216a542e46ba2189920a9be678"
     },
     {
+      "path": "specs/studio-errors.spec.ts",
+      "sha256": "7e2e3882399b70352f357b1ac30ff16f3c1bf612b377317d1afad23d60451668"
+    },
+    {
+      "path": "specs/studio-locales.spec.ts",
+      "sha256": "5fade510424402bd17d6c9895451b205aad53bbfc0747d5d30d8de2fb972ed0f"
+    },
+    {
+      "path": "specs/studio.spec.ts",
+      "sha256": "50133813c65449fc54ba527137b9b584da0f785af84df919be59cb32fe493a03"
+    },
+    {
       "path": "src/share-card/block.json",
-      "sha256": "3444a2306c92330148e527afe5f99b543d649bcccc0667a4798557feaf4514cf"
+      "sha256": "ca2107df4c8c7d309ab08f82f832c60f9a36fbd832b7d187ed9ed5a1eb395552"
     },
     {
       "path": "src/share-card/edit.js",
-      "sha256": "ebbca8aa1ceb19227519e5466383a35caad691aabb34d7d11736a3c76ba568ee"
+      "sha256": "8ebe3bbd5278d5e6fa280f84cd5823728ec8ab3be0dd1413f3a61d72c8f13e61"
     },
     {
       "path": "src/share-card/editor.scss",
@@ -151,27 +207,47 @@
     },
     {
       "path": "src/share-card/render.php",
-      "sha256": "503227ee4b74f509e28f59de2df4dcba7657c21353f6d26699d6bd31499ee4ff"
+      "sha256": "ac20606fd65919a10b1650374fd01e6e6d8265c60801eba34fea761eed4e4d05"
     },
     {
       "path": "src/share-card/style.scss",
-      "sha256": "cbb36efd874989841adefd7eb27ff5f68b4494ef174bf321cc3402b8dfa9f8d9"
+      "sha256": "49dbb40713392c526510af1fc2f7b3ac83796cb8bb9aa35361a8a01d8323d591"
     },
     {
       "path": "src/share-card/view.js",
-      "sha256": "6f31467bdf276ca59a077a54515f28c8cd075be9df5feb242acb885138da027b"
+      "sha256": "cb3401284b0888e8e7e6ecf0051344b75e2989cc7ce47177e0dc28920a982726"
+    },
+    {
+      "path": "src/shared/canvas-renderer.js",
+      "sha256": "8195f9c868af9ee9f76dd61294b373cc3e59cbe70ac9ff0f610af0805903475f"
     },
     {
       "path": "src/shared/card-model.js",
-      "sha256": "e4ef9175179d22d4ac8f9a2651d5773a0cd23e88f7809864f510327265dd556e"
+      "sha256": "1bcee6e9cfbcfa534d72c7f84695ceb6ab99989fa14f935188c35293d766cc09"
     },
     {
       "path": "src/shared/card-model.test.js",
-      "sha256": "4105c0fa21318124bb432f558166e6ae35a06018863be06330449a217c346524"
+      "sha256": "7807974fb7d717c5d3c04751065b36b8eed655503a0b871e97f43088587c05ee"
     },
     {
       "path": "src/shared/product-catalog.js",
       "sha256": "0dc7257df6f90f315a2c87a6120026de9d969723d053e6f773d5d769bc050e92"
+    },
+    {
+      "path": "src/shared/zip.js",
+      "sha256": "f9b355c7dbaf85144f3a7013a1c5a43fd315bda04ddb84bffb69ffca5dcaf9a0"
+    },
+    {
+      "path": "src/shared/zip.test.js",
+      "sha256": "b7ae7c114d3aad900b730ab6e2e3466563cc23b9a68953c04a61b8745e41ed15"
+    },
+    {
+      "path": "src/studio/index.js",
+      "sha256": "6bd8582bc50d109016573aa1c45908aaa5d3168d16dbe0d828b8639213e84caa"
+    },
+    {
+      "path": "src/studio/index.scss",
+      "sha256": "9ee716fec59bef8cabe00c8bc4f25fedca5a72c86cef121bf20790ba6a59fb49"
     },
     {
       "path": "tests/php/run.php",
@@ -179,7 +255,7 @@
     },
     {
       "path": "tools/check-rtl-build.mjs",
-      "sha256": "201ca3e22e9eb0551f3e28f33f18e5c70dcd6f7f77de400b3c31efdeaacdb3e8"
+      "sha256": "de8436e04088985b089d9e2346bf7d9c5cba683cfd2353612b6e7f5334947076"
     },
     {
       "path": "tools/create-demo-page.php",
@@ -195,11 +271,15 @@
     },
     {
       "path": "tools/normalize-generated.mjs",
-      "sha256": "cf7f9aaf8ab4ebd8dc5394f389a51d6308935a55eaa6ad479195fc636935ccba"
+      "sha256": "e22c0cf754301fd277bf21e1794445786215d4a6ff6f4f62dce3c3a634944550"
     },
     {
       "path": "tools/seed-demo-product.php",
       "sha256": "8927cf178dd8699a8478ce3dbc5e2e81e2dc6f6b33187946d9e021c35a709a13"
+    },
+    {
+      "path": "tools/smoke-studio.php",
+      "sha256": "66658181d6c7f1657a563b1e3f27c3721ef7af46b26fbbdc438ccc8899ab9c11"
     },
     {
       "path": "tools/smoke.php",
@@ -211,7 +291,7 @@
     },
     {
       "path": "webpack.config.js",
-      "sha256": "27efb41c36c75e8051c822fffe05e4524fe5295def8f068d15b43b8693908df5"
+      "sha256": "9e520bfb7be45f52ba256769dc853ae22d2b4aa54a8be79ca98e0e793ef4c849"
     },
     {
       "path": "wordpress-org-assets/banner-1544x500.png",
@@ -248,6 +328,14 @@
     {
       "path": "wordpress-org-assets/screenshot-5.png",
       "sha256": "d2c52fd1a56e942b2b2cbbe258c1dfd8f9325c44b5cab0f20f27a08761db9ac6"
+    },
+    {
+      "path": "wordpress-org-assets/screenshot-6.png",
+      "sha256": "5d4ffe79445c8bc8fee80ce7f63f45a14bfedd7425508165648414509d9ed0f5"
+    },
+    {
+      "path": "wordpress-org-assets/screenshot-7.png",
+      "sha256": "1f85a7357595ba8ae2688f80b015fcf69030741d0bf7b0dfbd34501571346a0c"
     }
   ]
 }

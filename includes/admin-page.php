@@ -100,8 +100,9 @@ function lineweb_share_cards_render_admin_page() {
 			<div>
 				<p class="lineweb-suite-admin__eyebrow"><?php esc_html_e( 'Lineweb Share Cards', 'lineweb-share-cards' ); ?></p>
 				<h1 id="lineweb-share-cards-title"><?php esc_html_e( 'Turn the useful part of a page into an image people can carry with them.', 'lineweb-share-cards' ); ?></h1>
-				<p class="lineweb-suite-admin__lede"><?php esc_html_e( 'Add one Gutenberg block, choose a practical format, and let visitors create a branded PNG without an account, external API, or tracking.', 'lineweb-share-cards' ); ?></p>
+				<p class="lineweb-suite-admin__lede"><?php esc_html_e( 'Create social images from your articles and products in Image Studio, or add a Gutenberg block so visitors can download their own branded PNG.', 'lineweb-share-cards' ); ?></p>
 				<div class="lineweb-suite-admin__actions">
+					<a class="lineweb-suite-admin__button lineweb-suite-admin__button--primary" href="<?php echo esc_url( admin_url( 'admin.php?page=lineweb-share-cards-studio' ) ); ?>"><?php esc_html_e( 'Open Image Studio', 'lineweb-share-cards' ); ?></a>
 					<a class="lineweb-suite-admin__button lineweb-suite-admin__button--primary" href="<?php echo esc_url( admin_url( 'post-new.php?post_type=page' ) ); ?>"><span class="dashicons dashicons-plus-alt2" aria-hidden="true"></span><?php esc_html_e( 'Create on a page', 'lineweb-share-cards' ); ?></a>
 					<a class="lineweb-suite-admin__button lineweb-suite-admin__button--secondary" href="<?php echo esc_url( admin_url( 'post-new.php' ) ); ?>"><?php esc_html_e( 'Create in a post', 'lineweb-share-cards' ); ?></a>
 				</div>
@@ -117,7 +118,7 @@ function lineweb_share_cards_render_admin_page() {
 
 		<div class="lineweb-suite-admin__quick-stats" aria-label="<?php esc_attr_e( 'Plugin summary', 'lineweb-share-cards' ); ?>">
 			<div class="lineweb-suite-admin__stat"><strong>4</strong><span><?php esc_html_e( 'practical card types', 'lineweb-share-cards' ); ?></span></div>
-			<div class="lineweb-suite-admin__stat"><strong>3</strong><span><?php esc_html_e( 'exact social formats', 'lineweb-share-cards' ); ?></span></div>
+			<div class="lineweb-suite-admin__stat"><strong>4</strong><span><?php esc_html_e( 'exact social formats', 'lineweb-share-cards' ); ?></span></div>
 			<div class="lineweb-suite-admin__stat"><strong>0</strong><span><?php esc_html_e( 'accounts or external requests', 'lineweb-share-cards' ); ?></span></div>
 		</div>
 

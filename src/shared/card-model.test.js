@@ -1,12 +1,24 @@
 import {
 	cardContent,
 	cardDimensions,
+	cardFont,
+	exportFilename,
 	hasStrongRtlCharacter,
 	safeFilename,
 	shareCaption,
 } from './card-model';
 
 describe( 'share card model', () => {
+	it( 'exports Story with a distinct filename and restricts fonts', () => {
+		expect( cardDimensions( 'story' ) ).toEqual(
+			expect.objectContaining( { width: 1080, height: 1920 } )
+		);
+		expect( exportFilename( { content: 'Card', ratio: 'story' } ) ).toBe(
+			'card-1080x1920.png'
+		);
+		expect( cardFont( 'remote-url' ) ).toBe( 'Arial, sans-serif' );
+		expect( cardFont( 'serif' ) ).toBe( 'Georgia, serif' );
+	} );
 	it( 'uses exact social export dimensions', () => {
 		expect( cardDimensions( 'portrait' ) ).toEqual(
 			expect.objectContaining( { width: 1080, height: 1350 } )

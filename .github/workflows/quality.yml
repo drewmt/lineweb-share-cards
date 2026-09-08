@@ -39,6 +39,7 @@ jobs:
             - run: npm run check:rtl
             - run: git diff --exit-code -- build
             - run: msgfmt --check -o /dev/null languages/lineweb-share-cards-el_GR.po
+            - run: msgfmt --check -o /dev/null languages/lineweb-share-cards-el.po
             - run: test -z "$(msgattrib --untranslated languages/lineweb-share-cards-el_GR.po | grep '^msgid ')"
 
     e2e:
@@ -60,7 +61,9 @@ jobs:
             - run: npm run env:start
             - run: npm run env:activate
             - run: npx wp-env run cli wp theme install ${{ matrix.theme }} --activate
+            - run: npx wp-env run cli wp language core install el ar
             - run: npx wp-env run cli wp eval-file /var/www/html/wp-content/plugins/lineweb-share-cards/tools/seed-demo-product.php
+            - run: npx wp-env run cli wp eval-file /var/www/html/wp-content/plugins/lineweb-share-cards/tools/smoke-studio.php
             - run: npm run test:e2e
             - if: failure()
               uses: actions/upload-artifact@v4

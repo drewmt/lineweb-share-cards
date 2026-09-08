@@ -36,6 +36,9 @@ function lineweb_share_cards_choice( $value, $allowed, $fallback ) {
 /** Return a safe six-digit color. */
 function lineweb_share_cards_color( $value, $fallback ) {
 	$color = sanitize_hex_color( is_string( $value ) ? $value : '' );
+	if ( $color && 4 === strlen( $color ) ) {
+		$color = '#' . $color[1] . $color[1] . $color[2] . $color[2] . $color[3] . $color[3];
+	}
 	return $color ?: $fallback;
 }
 

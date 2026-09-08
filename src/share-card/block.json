@@ -2,7 +2,7 @@
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
 	"name": "lineweb-share-cards/share-card",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"title": "Shareable Quote & Social Card",
 	"category": "lineweb",
 	"icon": "share",
@@ -17,7 +17,7 @@
 		},
 		"ratio": {
 			"type": "string",
-			"enum": [ "square", "portrait", "landscape" ],
+			"enum": [ "square", "portrait", "landscape", "story" ],
 			"default": "square"
 		},
 		"theme": {
@@ -26,6 +26,11 @@
 			"default": "editorial"
 		},
 		"eyebrow": { "type": "string", "default": "Worth sharing" },
+		"font": {
+			"type": "string",
+			"enum": [ "sans", "serif", "mono" ],
+			"default": "sans"
+		},
 		"content": {
 			"type": "string",
 			"default": "A useful idea should be easy to remember and simple to share."

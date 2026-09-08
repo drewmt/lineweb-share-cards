@@ -2,7 +2,26 @@ export const CARD_RATIOS = Object.freeze( {
 	square: { width: 1080, height: 1080, label: 'Square · 1080 × 1080' },
 	portrait: { width: 1080, height: 1350, label: 'Portrait · 1080 × 1350' },
 	landscape: { width: 1200, height: 630, label: 'Landscape · 1200 × 630' },
+	story: { width: 1080, height: 1920, label: 'Story · 1080 × 1920' },
 } );
+
+export const CARD_FONTS = Object.freeze( {
+	sans: 'Arial, sans-serif',
+	serif: 'Georgia, serif',
+	mono: 'Courier New, monospace',
+} );
+
+export function cardFont( font ) {
+	return CARD_FONTS[ font ] || CARD_FONTS.sans;
+}
+
+export function exportFilename( config ) {
+	const { width, height } = cardDimensions( config.ratio );
+	return safeFilename( config ).replace(
+		/\.png$/,
+		`-${ width }x${ height }.png`
+	);
+}
 
 export function cardDimensions( ratio ) {
 	return CARD_RATIOS[ ratio ] || CARD_RATIOS.square;

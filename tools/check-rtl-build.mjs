@@ -13,4 +13,16 @@ for ( const file of [
 	}
 }
 
-process.stdout.write( 'Share Card editor and frontend RTL styles verified.\n' );
+for ( const file of [ 'index.css', 'index-rtl.css' ] ) {
+	const contents = await readFile(
+		new URL( `../build/studio/${ file }`, import.meta.url ),
+		'utf8'
+	);
+	if ( ! contents.trim() ) {
+		throw new Error( `Empty studio stylesheet: ${ file }` );
+	}
+}
+
+process.stdout.write(
+	'Share Card editor, frontend, and studio RTL styles verified.\n'
+);

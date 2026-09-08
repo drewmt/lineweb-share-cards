@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Lineweb Share Cards 0.1.0\n"
+"Project-Id-Version: Lineweb Share Cards 0.2.0\n"
 "Report-Msgid-Bugs-To: info@lineweb.gr\n"
-"POT-Creation-Date: 2026-08-20 00:00+0000\n"
+"POT-Creation-Date: 2026-09-08 00:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: lineweb-share-cards.php:50
+#: lineweb-share-cards.php:52
 msgid "Lineweb"
 msgstr ""
 
-#: includes/admin-page.php:13 includes/admin-page.php:103
+#: includes/admin-page.php:13 includes/admin-page.php:101
+#: includes/studio-page.php:55
 msgid "Lineweb Share Cards"
 msgstr ""
 
@@ -29,413 +30,599 @@ msgstr ""
 msgid "Share Cards"
 msgstr ""
 
-#: includes/admin-page.php:71
+#: includes/admin-page.php:70
 msgid "Create share card"
 msgstr ""
 
-#: includes/admin-page.php:95
+#: includes/admin-page.php:93 includes/studio-page.php:38
 msgid "You do not have permission to access this page."
 msgstr ""
 
-#: includes/admin-page.php:104
+#: includes/admin-page.php:102
 msgid "Turn the useful part of a page into an image people can carry with them."
 msgstr ""
 
-#: includes/admin-page.php:105
+#: includes/admin-page.php:103
 msgid ""
-"Add one Gutenberg block, choose a practical format, and let visitors create "
-"a branded PNG without an account, external API, or tracking."
+"Create social images from your articles and products in Image Studio, or "
+"add a Gutenberg block so visitors can download their own branded PNG."
 msgstr ""
 
-#: includes/admin-page.php:107
+#: includes/admin-page.php:105
+msgid "Open Image Studio"
+msgstr ""
+
+#: includes/admin-page.php:106
 msgid "Create on a page"
 msgstr ""
 
-#: includes/admin-page.php:108
+#: includes/admin-page.php:107
 msgid "Create in a post"
 msgstr ""
 
-#: includes/admin-page.php:111
+#: includes/admin-page.php:110
 msgid "Plugin status"
 msgstr ""
 
-#: includes/admin-page.php:112 includes/admin-page.php:154
+#: includes/admin-page.php:111 includes/admin-page.php:153
+#: includes/studio-page.php:54
 msgid "Lineweb — Creative Digital Agency"
 msgstr ""
 
-#: includes/admin-page.php:114
+#: includes/admin-page.php:113
 msgid "Share Cards is active"
 msgstr ""
 
-#: includes/admin-page.php:115
+#: includes/admin-page.php:114
 #. translators: %s: plugin version.
 #, php-format
 msgid "Version %s · Local PNG generation"
 msgstr ""
 
-#: includes/admin-page.php:120
+#: includes/admin-page.php:119
 msgid "Plugin summary"
 msgstr ""
 
-#: includes/admin-page.php:121
+#: includes/admin-page.php:120
 msgid "practical card types"
 msgstr ""
 
-#: includes/admin-page.php:122
+#: includes/admin-page.php:121
 msgid "exact social formats"
 msgstr ""
 
-#: includes/admin-page.php:123
+#: includes/admin-page.php:122
 msgid "accounts or external requests"
 msgstr ""
 
-#: includes/admin-page.php:128
+#: includes/admin-page.php:127
 msgid "What you can publish"
 msgstr ""
 
-#: includes/admin-page.php:129
+#: includes/admin-page.php:128
 msgid ""
 "Every option remains readable without JavaScript. JavaScript is used only "
 "when a visitor creates, shares, downloads, or copies."
 msgstr ""
 
-#: includes/admin-page.php:133
+#: includes/admin-page.php:132
 msgid "Posts and pages"
 msgstr ""
 
-#: includes/admin-page.php:133
+#: includes/admin-page.php:132
 msgid "Quote or key takeaway"
 msgstr ""
 
-#: includes/admin-page.php:133
+#: includes/admin-page.php:132
 msgid ""
 "Make the strongest idea in an article easy to save and share with its "
 "source URL."
 msgstr ""
 
-#: includes/admin-page.php:134
+#: includes/admin-page.php:133
 msgid "Reports and case studies"
 msgstr ""
 
-#: includes/admin-page.php:134
+#: includes/admin-page.php:133
 msgid "Statistic with context"
 msgstr ""
 
-#: includes/admin-page.php:134
+#: includes/admin-page.php:133
 msgid "Pair one honest number with the sentence needed to understand what it means."
 msgstr ""
 
-#: includes/admin-page.php:135
+#: includes/admin-page.php:134
 msgid "WooCommerce active"
 msgstr ""
 
-#: includes/admin-page.php:135
+#: includes/admin-page.php:134
 msgid "Optional WooCommerce"
 msgstr ""
 
-#: includes/admin-page.php:135
+#: includes/admin-page.php:134
 msgid "Live product highlight"
 msgstr ""
 
-#: includes/admin-page.php:135
+#: includes/admin-page.php:134
 msgid ""
 "Select a product and keep its title, price, availability, image, and link "
 "current."
 msgstr ""
 
-#: includes/admin-page.php:136
+#: includes/admin-page.php:135
 msgid "Visitor action"
 msgstr ""
 
-#: includes/admin-page.php:136
+#: includes/admin-page.php:135
 msgid "Share, download, or copy"
 msgstr ""
 
-#: includes/admin-page.php:136
+#: includes/admin-page.php:135
 msgid ""
 "Use the native share sheet when image files are supported, with a clear PNG "
 "fallback."
 msgstr ""
 
-#: includes/admin-page.php:143
+#: includes/admin-page.php:142
 msgid "A three-step workflow"
 msgstr ""
 
-#: includes/admin-page.php:144
+#: includes/admin-page.php:143
 msgid "Search the inserter for “Shareable Quote & Social Card”."
 msgstr ""
 
-#: includes/admin-page.php:147
+#: includes/admin-page.php:146
 msgid "Choose the useful part"
 msgstr ""
 
-#: includes/admin-page.php:147
+#: includes/admin-page.php:146
 msgid "Use a quote, takeaway, statistic, or one real product."
 msgstr ""
 
-#: includes/admin-page.php:148
+#: includes/admin-page.php:147
 msgid "Apply site branding"
 msgstr ""
 
-#: includes/admin-page.php:148
+#: includes/admin-page.php:147
 msgid "Set the format, colors, logo, domain, image, and optional source QR."
 msgstr ""
 
-#: includes/admin-page.php:149
+#: includes/admin-page.php:148
 msgid "Publish normally"
 msgstr ""
 
-#: includes/admin-page.php:149
+#: includes/admin-page.php:148
 msgid "Visitors use the controls on the page. Nothing is sent to Lineweb."
 msgstr ""
 
-#: includes/admin-page.php:155
+#: includes/admin-page.php:154
 msgid "A free, self-contained WordPress tool."
 msgstr ""
 
-#: includes/admin-page.php:155
+#: includes/admin-page.php:154
 msgid ""
 "No telemetry, no account, no automatic posting, and no forced public "
 "Lineweb credit."
 msgstr ""
 
-#: includes/admin-page.php:156
+#: includes/admin-page.php:155
 msgid "Support"
 msgstr ""
 
-#: src/share-card/render.php:36
-msgid "This Share Card needs a published, catalog-visible WooCommerce product."
+#: includes/studio-data.php:49
+msgid "Create social image"
 msgstr ""
 
-#: src/share-card/render.php:45 src/share-card/edit.js:122
+#: includes/studio-data.php:60
+msgid "Choose a published article, page, or visible product you can edit."
+msgstr ""
+
+#: includes/studio-data.php:71 src/share-card/render.php:47 src/share-card/edit.js:123
 msgid "In stock"
 msgstr ""
 
-#: src/share-card/render.php:45 src/share-card/edit.js:123
+#: includes/studio-data.php:71 src/share-card/render.php:47 src/share-card/edit.js:124
 msgid "Out of stock"
 msgstr ""
 
-#: src/share-card/render.php:78
-msgid "Share image"
+#: includes/studio-page.php:8 includes/studio-page.php:55
+msgid "Social Image Studio"
 msgstr ""
 
-#: src/share-card/render.php:79
-msgid "Download PNG"
+#: includes/studio-page.php:8
+msgid "Image Studio"
 msgstr ""
 
-#: src/share-card/render.php:80
-msgid "Copy caption"
+#: includes/studio-page.php:47
+msgid "Make something worth sharing."
 msgstr ""
 
-#: src/share-card/render.php:106
-msgid "Creating your PNG…"
+#: includes/studio-page.php:55
+msgid "Your content. Your brand. Ready to share."
 msgstr ""
 
-#: src/share-card/render.php:107
-msgid "Share sheet opened."
+#: includes/studio-page.php:56
+msgid "Choose content"
 msgstr ""
 
-#: src/share-card/render.php:108
-msgid "PNG downloaded."
+#: includes/studio-page.php:60
+msgid "Start with your published content"
 msgstr ""
 
-#: src/share-card/render.php:109
-msgid "Caption copied."
+#: includes/studio-page.php:61
+msgid "Search articles, pages and products"
 msgstr ""
 
-#: src/share-card/render.php:110
-msgid "Image sharing is not available here, so the PNG was downloaded instead."
+#: includes/studio-page.php:61
+msgid "Search"
 msgstr ""
 
-#: src/share-card/render.php:111
-msgid "Copy is not available in this browser."
+#: includes/studio-page.php:73
+msgid ""
+"No matching published content. You can create a card below or use Create "
+"social image from the content list."
 msgstr ""
 
-#: src/share-card/render.php:112
-msgid "The PNG could not be created. Try downloading again."
+#: includes/studio-page.php:75
+msgid ""
+"Showing up to 20 recent matches. Search by title to find older content, or "
+"start a blank card below."
 msgstr ""
 
-#: src/share-card/render.php:144
-msgid "View product"
+#: includes/studio-page.php:78
+msgid "Enable JavaScript to preview and export images in your browser."
 msgstr ""
 
-#: src/share-card/render.php:161
-msgid "Share this card"
+#: includes/studio-page.php:81
+msgid "Source"
 msgstr ""
 
-#: src/share-card/edit.js:75
-msgid "Replace image"
+#: includes/studio-page.php:82
+msgid "01 · Content"
 msgstr ""
 
-#: src/share-card/edit.js:79
-msgid "Choose image"
-msgstr ""
-
-#: src/share-card/edit.js:93
-msgid "Remove"
-msgstr ""
-
-#: src/share-card/edit.js:105
-msgid "Choose a published product to preview live data."
-msgstr ""
-
-#: src/share-card/edit.js:174
-msgid "Write the idea people should remember…"
-msgstr ""
-
-#: src/share-card/edit.js:185
-msgid "Optional source or author"
-msgstr ""
-
-#: src/share-card/edit.js:199
-msgid "Card content"
-msgstr ""
-
-#: src/share-card/edit.js:204
-msgid "Card type"
-msgstr ""
-
-#: src/share-card/edit.js:208
-msgid "Quote"
-msgstr ""
-
-#: src/share-card/edit.js:212
-msgid "Key takeaway"
-msgstr ""
-
-#: src/share-card/edit.js:219 src/share-card/edit.js:276
-msgid "Statistic"
-msgstr ""
-
-#: src/share-card/edit.js:223
-msgid "WooCommerce product"
-msgstr ""
-
-#: src/share-card/edit.js:234 src/share-card/edit.js:527
+#: includes/studio-page.php:83 src/share-card/edit.js:236 src/share-card/edit.js:557
 msgid "Small heading"
 msgstr ""
 
-#: src/share-card/edit.js:240
-msgid "Activate WooCommerce to use live product cards."
+#: includes/studio-page.php:84
+msgid "Headline"
 msgstr ""
 
-#: src/share-card/edit.js:250
-msgid "Product"
+#: includes/studio-page.php:85
+msgid "Supporting text"
 msgstr ""
 
-#: src/share-card/edit.js:287
-msgid "Statistic context"
+#: includes/studio-page.php:86 src/share-card/edit.js:80
+msgid "Choose image"
 msgstr ""
 
-#: src/share-card/edit.js:300
-msgid "Format and style"
+#: includes/studio-page.php:86
+msgid "Remove image"
 msgstr ""
 
-#: src/share-card/edit.js:304
-msgid "Image format"
+#: includes/studio-page.php:88
+msgid "02 · Layout"
 msgstr ""
 
-#: src/share-card/edit.js:321
-msgid "Style preset"
+#: includes/studio-page.php:89
+msgid "Template"
 msgstr ""
 
-#: src/share-card/edit.js:325
+#: includes/studio-page.php:89 src/share-card/edit.js:334
 msgid "Editorial"
 msgstr ""
 
-#: src/share-card/edit.js:329
-msgid "Signal"
+#: includes/studio-page.php:89
+msgid "Split frame"
 msgstr ""
 
-#: src/share-card/edit.js:333
-msgid "Minimal"
+#: includes/studio-page.php:89
+msgid "Photo poster"
 msgstr ""
 
-#: src/share-card/edit.js:337
-msgid "Dark"
+#: includes/studio-page.php:89
+msgid "Type focus"
 msgstr ""
 
-#: src/share-card/edit.js:350
+#: includes/studio-page.php:90
+msgid "Format"
+msgstr ""
+
+#: includes/studio-page.php:90
+msgid "Square · 1080 × 1080"
+msgstr ""
+
+#: includes/studio-page.php:90
+msgid "Portrait · 1080 × 1350"
+msgstr ""
+
+#: includes/studio-page.php:90
+msgid "Landscape · 1200 × 630"
+msgstr ""
+
+#: includes/studio-page.php:90 src/share-card/edit.js:319
+msgid "Story · 1080 × 1920"
+msgstr ""
+
+#: includes/studio-page.php:91 src/share-card/edit.js:359
 msgid "Text alignment"
 msgstr ""
 
-#: src/share-card/edit.js:354
-msgid "Left"
+#: includes/studio-page.php:91
+msgid "Start"
 msgstr ""
 
-#: src/share-card/edit.js:358
+#: includes/studio-page.php:91 src/share-card/edit.js:367
 msgid "Center"
 msgstr ""
 
-#: src/share-card/edit.js:368
+#: includes/studio-page.php:93
+msgid "03 · Brand"
+msgstr ""
+
+#: includes/studio-page.php:94 src/share-card/edit.js:377
 msgid "Background"
 msgstr ""
 
-#: src/share-card/edit.js:379
+#: includes/studio-page.php:94 src/share-card/edit.js:388
 msgid "Text"
 msgstr ""
 
-#: src/share-card/edit.js:390
+#: includes/studio-page.php:94 src/share-card/edit.js:399
 msgid "Accent"
 msgstr ""
 
-#: src/share-card/edit.js:402
+#: includes/studio-page.php:95 src/share-card/edit.js:424
+msgid "Font"
+msgstr ""
+
+#: includes/studio-page.php:96
+msgid "Choose logo"
+msgstr ""
+
+#: includes/studio-page.php:96
+msgid "Hide logo"
+msgstr ""
+
+#: includes/studio-page.php:97
+msgid "Show domain"
+msgstr ""
+
+#: includes/studio-page.php:97
+msgid "Include source QR"
+msgstr ""
+
+#: includes/studio-page.php:98
+msgid "Save brand defaults"
+msgstr ""
+
+#: includes/studio-page.php:98
+msgid ""
+"Save colors, font and logo for future cards. Existing published blocks keep "
+"their own settings."
+msgstr ""
+
+#: includes/studio-page.php:101
+msgid "Image preview and export"
+msgstr ""
+
+#: includes/studio-page.php:102
+msgid "Ready for your next post"
+msgstr ""
+
+#: includes/studio-page.php:103
+msgid "Generated social card preview"
+msgstr ""
+
+#: includes/studio-page.php:105 src/share-card/render.php:81
+msgid "Download PNG"
+msgstr ""
+
+#: includes/studio-page.php:105
+msgid "Download all 4 formats (ZIP)"
+msgstr ""
+
+#: includes/studio-page.php:106
+msgid ""
+"Images are generated on this device. Review text and prices before posting. "
+"Photo poster uses white text over a dark overlay; Type focus keeps the "
+"image out."
+msgstr ""
+
+#: src/share-card/render.php:38
+msgid "This Share Card needs a published, catalog-visible WooCommerce product."
+msgstr ""
+
+#: src/share-card/render.php:80
+msgid "Share image"
+msgstr ""
+
+#: src/share-card/render.php:82
+msgid "Copy caption"
+msgstr ""
+
+#: src/share-card/render.php:109
+msgid "Creating your PNG…"
+msgstr ""
+
+#: src/share-card/render.php:110
+msgid "Share sheet opened."
+msgstr ""
+
+#: src/share-card/render.php:111 src/studio/index.js:211
+msgid "PNG downloaded."
+msgstr ""
+
+#: src/share-card/render.php:112
+msgid "Caption copied."
+msgstr ""
+
+#: src/share-card/render.php:113
+msgid "Image sharing is not available here, so the PNG was downloaded instead."
+msgstr ""
+
+#: src/share-card/render.php:114
+msgid "Copy is not available in this browser."
+msgstr ""
+
+#: src/share-card/render.php:115
+msgid "The PNG could not be created. Try downloading again."
+msgstr ""
+
+#: src/share-card/render.php:147
+msgid "View product"
+msgstr ""
+
+#: src/share-card/render.php:164
+msgid "Share this card"
+msgstr ""
+
+#: src/share-card/edit.js:76
+msgid "Replace image"
+msgstr ""
+
+#: src/share-card/edit.js:94
+msgid "Remove"
+msgstr ""
+
+#: src/share-card/edit.js:106
+msgid "Choose a published product to preview live data."
+msgstr ""
+
+#: src/share-card/edit.js:176
+msgid "Write the idea people should remember…"
+msgstr ""
+
+#: src/share-card/edit.js:187
+msgid "Optional source or author"
+msgstr ""
+
+#: src/share-card/edit.js:201
+msgid "Card content"
+msgstr ""
+
+#: src/share-card/edit.js:206
+msgid "Card type"
+msgstr ""
+
+#: src/share-card/edit.js:210
+msgid "Quote"
+msgstr ""
+
+#: src/share-card/edit.js:214
+msgid "Key takeaway"
+msgstr ""
+
+#: src/share-card/edit.js:221 src/share-card/edit.js:278
+msgid "Statistic"
+msgstr ""
+
+#: src/share-card/edit.js:225
+msgid "WooCommerce product"
+msgstr ""
+
+#: src/share-card/edit.js:242
+msgid "Activate WooCommerce to use live product cards."
+msgstr ""
+
+#: src/share-card/edit.js:252
+msgid "Product"
+msgstr ""
+
+#: src/share-card/edit.js:289
+msgid "Statistic context"
+msgstr ""
+
+#: src/share-card/edit.js:302
+msgid "Format and style"
+msgstr ""
+
+#: src/share-card/edit.js:306
+msgid "Image format"
+msgstr ""
+
+#: src/share-card/edit.js:330
+msgid "Style preset"
+msgstr ""
+
+#: src/share-card/edit.js:338
+msgid "Signal"
+msgstr ""
+
+#: src/share-card/edit.js:342
+msgid "Minimal"
+msgstr ""
+
+#: src/share-card/edit.js:346
+msgid "Dark"
+msgstr ""
+
+#: src/share-card/edit.js:363
+msgid "Left"
+msgstr ""
+
+#: src/share-card/edit.js:411
 msgid "Brand and source"
 msgstr ""
 
-#: src/share-card/edit.js:405
+#: src/share-card/edit.js:420
+msgid "Apply saved brand"
+msgstr ""
+
+#: src/share-card/edit.js:435
 msgid "Show site domain"
 msgstr ""
 
-#: src/share-card/edit.js:415
+#: src/share-card/edit.js:445
 msgid "Show QR code in the PNG"
 msgstr ""
 
-#: src/share-card/edit.js:423
+#: src/share-card/edit.js:453
 msgid "Show logo"
 msgstr ""
 
-#: src/share-card/edit.js:431
+#: src/share-card/edit.js:461
 msgid "Custom logo"
 msgstr ""
 
-#: src/share-card/edit.js:444
+#: src/share-card/edit.js:474
 msgid "Card image"
 msgstr ""
 
-#: src/share-card/edit.js:457
+#: src/share-card/edit.js:487
 msgid "Sharing actions"
 msgstr ""
 
-#: src/share-card/edit.js:461
+#: src/share-card/edit.js:491
 msgid "Share button label"
 msgstr ""
 
-#: src/share-card/edit.js:472
+#: src/share-card/edit.js:502
 msgid "Download button label"
 msgstr ""
 
-#: src/share-card/edit.js:483
+#: src/share-card/edit.js:513
 msgid "Copy button label"
 msgstr ""
 
-#: src/share-card/edit.js:494
+#: src/share-card/edit.js:524
 msgid "Custom share caption"
 msgstr ""
 
-#: src/share-card/edit.js:498
+#: src/share-card/edit.js:528
 msgid "Leave empty to use the card text and source URL."
 msgstr ""
 
-#: src/share-card/edit.js:544
+#: src/share-card/edit.js:574
 msgid "QR code preview"
 msgstr ""
 
-#: src/share-card/edit.js:557
+#: src/share-card/edit.js:587
 msgid "Sharing controls preview"
 msgstr ""
 
-#: src/share-card/edit.js:573
+#: src/share-card/edit.js:603
 msgid ""
 "Buttons become active on the published page. PNG generation stays in the "
 "visitor’s browser."
@@ -443,4 +630,47 @@ msgstr ""
 
 #: src/shared/product-catalog.js:46
 msgid "WooCommerce products could not be loaded."
+msgstr ""
+
+#: src/studio/index.js:66
+msgid ""
+"Some text was shortened to fit. Shorten the headline or choose a taller "
+"format."
+msgstr ""
+
+#: src/studio/index.js:70
+msgid "Preview ready. Your download will match this image."
+msgstr ""
+
+#: src/studio/index.js:83
+msgid ""
+"Preview could not be created. Choose a Media Library image that this "
+"browser can load, then try again."
+msgstr ""
+
+#: src/studio/index.js:179
+msgid "Brand defaults saved for future cards."
+msgstr ""
+
+#: src/studio/index.js:186
+msgid "Brand defaults could not be saved. Reload the page and try again."
+msgstr ""
+
+# translators: %d: number of the image being generated.
+#: src/studio/index.js:218
+msgid "Preparing image %d of 4…"
+msgstr ""
+
+#: src/studio/index.js:237
+msgid ""
+"ZIP downloaded. Text was shortened in some formats; review each image "
+"before posting."
+msgstr ""
+
+#: src/studio/index.js:241
+msgid "All four formats downloaded in one ZIP."
+msgstr ""
+
+#: src/studio/index.js:249
+msgid "Export failed. Please try again."
 msgstr ""

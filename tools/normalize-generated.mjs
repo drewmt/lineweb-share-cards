@@ -10,24 +10,27 @@ const guardedManifest = manifest.includes( directAccessGuard )
 
 await writeFile( manifestPath, guardedManifest.replace( /[\t ]+$/gm, '' ) );
 
-const viewPath = new URL( '../build/share-card/view.js', import.meta.url );
-const viewAssetPath = new URL(
-	'../build/share-card/view.asset.php',
-	import.meta.url
-);
-const view = await readFile( viewPath, 'utf8' );
-const normalizedView = view
-	.replace( /(?:\.\.\/)+node_modules\//g, 'node_modules/' )
-	.replace( /\.\/node_modules\//g, 'node_modules/' );
-const viewVersion = createHash( 'sha256' )
-	.update( normalizedView )
-	.digest( 'hex' )
-	.slice( 0, 20 );
-const viewAsset = await readFile( viewAssetPath, 'utf8' );
-const normalizedViewAsset = viewAsset.replace(
-	/'version' => '[a-f0-9]+'/,
-	`'version' => '${ viewVersion }'`
-);
-
-await writeFile( viewPath, normalizedView );
-await writeFile( viewAssetPath, normalizedViewAsset );
+for ( const entry of [ 'share-card/view', 'studio/index' ] ) {
+	const scriptPath = new URL( `../build/${ entry }.js`, import.meta.url );
+	const assetPath = new URL(
+		`../build/${ entry }.asset.php`,
+		import.meta.url
+	);
+	const script = await readFile( scriptPath, 'utf8' );
+	const normalized = script
+		.replace( /(?:\.\.\/)+node_modules\//g, 'node_modules/' )
+		.replace( /\.\/node_modules\//g, 'node_modules/' );
+	const version = createHash( 'sha256' )
+		.update( normalized )
+		.digest( 'hex' )
+		.slice( 0, 20 );
+	const asset = await readFile( assetPath, 'utf8' );
+	await writeFile( scriptPath, normalized );
+	await writeFile(
+		assetPath,
+		asset.replace(
+			/'version' => '[a-f0-9]+'/,
+			`'version' => '${ version }'`
+		)
+	);
+}

@@ -18,6 +18,7 @@ import {
 	ToggleControl,
 } from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
+import { cardFont } from '../shared/card-model';
 
 import {
 	formatProductPrice,
@@ -143,6 +144,7 @@ export default function Edit( { attributes, setAttributes } ) {
 			'--lwsc-text': attributes.textColor,
 			'--lwsc-accent': attributes.accentColor,
 			'--lwsc-align': attributes.textAlign,
+			'--lwsc-font': cardFont( attributes.font ),
 		},
 	} );
 	const removeImage = ( prefix ) =>
@@ -313,6 +315,13 @@ export default function Edit( { attributes, setAttributes } ) {
 								label: 'Landscape · 1200 × 630',
 								value: 'landscape',
 							},
+							{
+								label: __(
+									'Story · 1080 × 1920',
+									'lineweb-share-cards'
+								),
+								value: 'story',
+							},
 						] }
 						onChange={ ( ratio ) => setAttributes( { ratio } ) }
 					/>
@@ -401,6 +410,27 @@ export default function Edit( { attributes, setAttributes } ) {
 				<PanelBody
 					title={ __( 'Brand and source', 'lineweb-share-cards' ) }
 				>
+					{ EDITOR.brand && (
+						<Button
+							variant="secondary"
+							onClick={ () =>
+								setAttributes( { ...EDITOR.brand } )
+							}
+						>
+							{ __( 'Apply saved brand', 'lineweb-share-cards' ) }
+						</Button>
+					) }
+					<SelectControl
+						label={ __( 'Font', 'lineweb-share-cards' ) }
+						value={ attributes.font }
+						options={ [
+							{ label: 'Arial', value: 'sans' },
+							{ label: 'Georgia', value: 'serif' },
+							{ label: 'Courier New', value: 'mono' },
+						] }
+						onChange={ ( font ) => setAttributes( { font } ) }
+						__next40pxDefaultSize
+					/>
 					<ToggleControl
 						label={ __(
 							'Show site domain',

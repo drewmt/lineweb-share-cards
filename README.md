@@ -1,12 +1,29 @@
-# WordPress Shareable Quote Image & Social Card Block
+# WordPress Social Image Generator & Shareable Quote Cards
 
-Lineweb Share Cards is a free Gutenberg block that turns a quote, key takeaway, statistic, or WooCommerce product into a branded PNG visitors can share or download.
+Lineweb Share Cards is a free WordPress social image generator with an administration studio and a native Gutenberg block. Create branded images from articles, pages, and WooCommerce products, or let visitors download a quote, takeaway, statistic, or product card from your content.
 
-The card remains readable as normal page content before JavaScript runs. PNG generation happens only after a visitor chooses an action and stays inside that visitor's browser. There is no account, telemetry, tracking pixel, external image service, or automatic social posting.
+The public block remains readable before JavaScript runs. Visitor PNG generation starts only after an action; the studio generates its preview as you edit. Both run in the browser. There is no account, telemetry, tracking pixel, external image service, or automatic social posting.
+
+## New in 0.2: Social Image Studio
+
+1. Open **Share Cards → Image Studio**, or use **Create social image** beneath a published article, page, or visible product.
+2. The title, featured image, source link, and current product price/availability prefill the card. Edit the card's copy without changing the source.
+3. Choose **Editorial**, **Split frame**, **Photo poster**, or **Type focus**. Adjust colors, logo, alignment, and a local system font.
+4. Download the preview as a PNG, or download **all four formats in one ZIP**: 1080 × 1080, 1080 × 1350, 1200 × 630, and Story 1080 × 1920.
+
+Administrators can save colors, font, and logo as defaults for future studio cards. Existing blocks keep their own settings; **Apply saved brand** in the editor is an explicit action.
+
+The preview and download use the same renderer. If text needs shortening, the studio warns you. If a selected image cannot be loaded or exported, it blocks the export until you remove or replace the image. Photo poster uses white text over a dark overlay; Type focus omits the image. Story layouts leave space above and below the content, but social platform overlays vary.
+
+Source content must be published, not password protected, and editable by the current user. Product sources must also be catalog-visible. The studio takes a snapshot when opened; reopen it to refresh product data. Review every image before posting. It does not save image drafts or modify products, prices, or article content.
 
 ## Screenshots
 
 All screenshots use synthetic demonstration content and a local WooCommerce product. No client, customer, order, or analytics data is included.
+
+![Social Image Studio with product source, brand controls, exact preview, and PNG or ZIP export](wordpress-org-assets/screenshot-6.png)
+
+![Social Image Studio controls and export on a narrow mobile screen](wordpress-org-assets/screenshot-7.png)
 
 ![Lineweb Share Cards WordPress administration home](wordpress-org-assets/screenshot-1.png)
 
@@ -24,7 +41,7 @@ All screenshots use synthetic demonstration content and a local WooCommerce prod
 - **Key takeaway:** one practical conclusion from a post, guide, or page.
 - **Statistic:** one number paired with the context needed to understand it.
 - **WooCommerce product:** one manually selected, published, catalog-visible product with its live title, price, stock state, image, and link.
-- **Exact image formats:** square 1080 × 1080, portrait 1080 × 1350, and landscape 1200 × 630.
+- **Exact image formats:** square 1080 × 1080, portrait 1080 × 1350, landscape 1200 × 630, and Story 1080 × 1920.
 - **Site attribution:** optional logo, domain, and source-page QR code. All are controlled by the editor.
 - **Visitor actions:** native image sharing where the browser supports file sharing, plus reliable PNG download and caption copy fallbacks.
 
@@ -33,7 +50,7 @@ All screenshots use synthetic demonstration content and a local WooCommerce prod
 1. Edit a post, page, product, or buying guide in the block editor.
 2. Insert **Shareable Quote & Social Card**.
 3. Choose Quote, Key takeaway, Statistic, or WooCommerce product.
-4. Select a square, portrait, or landscape format and adjust the restrained style controls.
+4. Select a square, portrait, landscape, or Story format and adjust the style controls.
 5. Decide whether the PNG should include the site logo, domain, and source QR code.
 6. Publish normally. Visitors can then share, download, or copy from the page.
 
@@ -47,14 +64,18 @@ The plugin does not claim that a visitor completed a share. It records no share 
 
 Media Library images normally share the site's origin and can be included in the PNG. If a site serves an image from another domain without browser CORS permission, the readable card still works but the browser omits that image from the exported PNG.
 
+In the administration studio, a missing or blocked selected image instead prevents export and shows a warning so the creator can correct it.
+
 ## Performance and privacy
 
 - Frontend CSS and the small image-generation module load only on pages containing the block.
+- Studio assets and WordPress media tools load only on the Image Studio screen. Other admin pages do not load the renderer.
 - No React runtime is added to the frontend.
 - Quote, takeaway, and statistic cards require no database queries beyond the page itself.
 - Product cards resolve one selected product through WooCommerce CRUD during server rendering.
 - Images are created with the browser Canvas API. Nothing is uploaded to Lineweb or another service.
 - QR codes are generated locally from the published page URL.
+- Saved brand defaults are a single namespaced WordPress option. Editing requires `manage_options` and WordPress REST authentication; choosing a source requires permission to edit that individual post.
 
 ## Requirements
 

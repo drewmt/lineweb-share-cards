@@ -1,0 +1,375 @@
+.lwsc-studio-page {
+	--lwsc-border: #dcd8d1;
+	--lwsc-ink: #212620;
+	--lwsc-muted: #61695f;
+	color: var(--lwsc-ink);
+	margin: 24px 24px 40px 4px;
+	max-width: 1440px;
+}
+
+.lwsc-studio-header {
+	align-items: center;
+	background: #131b19;
+	border-radius: 14px;
+	color: #faf8f2;
+	display: grid;
+	gap: 32px;
+	grid-template-columns: 170px 1fr auto;
+	margin-bottom: 24px;
+	padding: 28px 32px;
+
+	h1 {
+		color: inherit;
+		font-size: clamp(24px, 3vw, 34px);
+		font-weight: 650;
+		line-height: 1.2;
+		margin: 5px 0 10px;
+		padding: 0;
+	}
+
+	p {
+		font-size: 15px;
+		margin: 0;
+	}
+
+	.lwsc-studio-kicker {
+		color: #c5d9b9;
+		font-size: 12px;
+		letter-spacing: 0.06em;
+	}
+}
+
+.lwsc-studio-lockup {
+	align-items: center;
+	color: #d8ded6;
+	display: flex;
+	flex-direction: column;
+	font-size: 12px;
+	gap: 8px;
+	justify-content: center;
+	text-decoration: none;
+
+	img {
+		display: block;
+		height: 66px;
+		object-fit: contain;
+		width: 154px;
+	}
+}
+
+.lwsc-studio {
+	align-items: start;
+	display: grid;
+	gap: 24px;
+	grid-template-columns: minmax(270px, 340px) minmax(0, 1fr);
+}
+
+.lwsc-studio-controls,
+.lwsc-studio-picker {
+	background: #fff;
+	border: 1px solid var(--lwsc-border);
+	border-radius: 12px;
+	padding: 24px;
+}
+
+.lwsc-studio-controls {
+	min-width: 0;
+
+	fieldset {
+		border: 0;
+		border-bottom: 1px solid var(--lwsc-border);
+		margin: 0 0 24px;
+		padding: 0 0 24px;
+	}
+
+	fieldset:last-child {
+		border: 0;
+		margin: 0;
+		padding-bottom: 0;
+	}
+
+	legend {
+		font-size: 15px;
+		font-weight: 650;
+		margin-bottom: 18px;
+	}
+
+	label {
+		display: block;
+		font-size: 13px;
+		font-weight: 500;
+		margin: 12px 0 6px;
+	}
+
+	input:not([type="checkbox"], [type="color"]),
+	textarea,
+	select {
+		border: 1px solid #8b9289;
+		border-radius: 6px;
+		box-sizing: border-box;
+		font-size: 14px;
+		max-width: none;
+		min-height: 44px;
+		padding: 8px 10px;
+		width: 100%;
+	}
+
+	textarea {
+		line-height: 1.55;
+		padding: 9px 10px;
+		resize: vertical;
+	}
+
+	.description {
+		color: var(--lwsc-muted);
+		font-size: 12px;
+		margin-top: 8px;
+	}
+
+	.lwsc-studio-check {
+		align-items: center;
+		display: flex;
+		gap: 8px;
+		min-height: 32px;
+	}
+}
+
+.lwsc-studio-origin {
+	background: #f3f5ef;
+	border-radius: 6px;
+	font-size: 12px;
+	margin: 0 0 24px;
+	overflow-wrap: anywhere;
+	padding: 12px;
+}
+
+.lwsc-studio-colors {
+	display: grid;
+	gap: 12px;
+	grid-template-columns: repeat(3, 1fr);
+
+	input[type="color"] {
+		background: none;
+		border: 1px solid #8b9289;
+		border-radius: 6px;
+		cursor: pointer;
+		display: block;
+		height: 38px;
+		margin-top: 8px;
+		padding: 3px;
+		width: 100%;
+	}
+}
+
+.lwsc-studio-inline {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	margin: 14px 0;
+}
+
+.lwsc-studio-page .button {
+	align-items: center;
+	border-radius: 7px;
+	display: inline-flex;
+	font-weight: 600;
+	justify-content: center;
+	min-height: 44px;
+	padding: 5px 16px;
+	white-space: normal;
+}
+
+.lwsc-studio-page .button,
+.lwsc-studio-page .button:hover,
+.lwsc-studio-page .button:focus {
+	background: #fafbf7;
+	border-color: #58705c;
+	color: #214d36;
+}
+
+.lwsc-studio-page .button-primary,
+.lwsc-studio-page .button-primary:hover,
+.lwsc-studio-page .button-primary:focus {
+	background: #214d36;
+	border-color: #214d36;
+	color: #fff;
+}
+
+.lwsc-studio-page .lwsc-studio-header .button,
+.lwsc-studio-page .lwsc-studio-header .button:hover,
+.lwsc-studio-page .lwsc-studio-header .button:focus {
+	background: transparent;
+	border-color: #8eac83;
+	color: #e3efde;
+}
+
+.lwsc-studio-preview {
+	min-width: 0;
+	position: sticky;
+	top: 48px;
+}
+
+.lwsc-studio-preview-heading {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	justify-content: space-between;
+	margin: 0 0 16px;
+
+	h2 {
+		font-size: 17px;
+		margin: 0;
+	}
+
+	span {
+		color: var(--lwsc-muted);
+		font-size: 12px;
+		font-variant-numeric: tabular-nums;
+	}
+}
+
+.lwsc-studio-artboard {
+	align-items: center;
+	background: #e6e4dd;
+	border: 1px solid #d4d3ca;
+	border-radius: 12px;
+	display: flex;
+	justify-content: center;
+	min-height: 260px;
+	padding: 24px;
+
+	img {
+		box-shadow: 0 5px 22px #20271c1f;
+		display: block;
+		height: auto;
+		max-height: 620px;
+		max-width: 100%;
+		object-fit: contain;
+		width: auto;
+	}
+
+	img[hidden] {
+		display: none;
+	}
+
+	&[aria-busy="true"] img {
+		opacity: 0.65;
+	}
+}
+
+.lwsc-studio-feedback {
+	color: #394935;
+	font-size: 13px;
+	line-height: 1.5;
+	min-height: 2em;
+}
+
+.lwsc-studio-export {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+}
+
+.lwsc-studio-footnote {
+	color: var(--lwsc-muted);
+	font-size: 12px;
+	line-height: 1.65;
+	max-width: 70ch;
+}
+
+.lwsc-studio-picker {
+	margin-bottom: 24px;
+
+	h2 {
+		margin-top: 0;
+	}
+
+	p {
+		color: var(--lwsc-muted);
+	}
+
+	input[type="search"] {
+		max-width: 100%;
+		min-height: 42px;
+		width: 400px;
+	}
+}
+
+.lwsc-studio-sources {
+	display: grid;
+	gap: 0 32px;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	max-height: 280px;
+	overflow: auto;
+
+	a {
+		align-items: center;
+		border-bottom: 1px solid var(--lwsc-border);
+		color: #214d36;
+		display: grid;
+		gap: 6px;
+		grid-template-columns: 75px 1fr 20px;
+		min-height: 44px;
+		padding: 10px 3px;
+		text-decoration: none;
+	}
+
+	span {
+		color: var(--lwsc-muted);
+		font-size: 11px;
+	}
+
+	strong {
+		font-size: 13px;
+		overflow-wrap: anywhere;
+	}
+}
+
+.lwsc-studio-page :is(a, button, input, select, textarea):focus-visible {
+	box-shadow: 0 0 0 2px #fff, 0 0 0 4px #214d36;
+	outline: 0;
+}
+
+@media (max-width: 900px) {
+
+	.lwsc-studio-header {
+		gap: 20px;
+		grid-template-columns: 1fr;
+		justify-items: center;
+		text-align: center;
+	}
+
+	.lwsc-studio {
+		grid-template-columns: 1fr;
+	}
+
+	.lwsc-studio-preview {
+		position: static;
+	}
+
+	.lwsc-studio-sources {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 480px) {
+
+	.lwsc-studio-page {
+		margin: 12px 10px 24px 0;
+	}
+
+	.lwsc-studio-controls,
+	.lwsc-studio-picker {
+		padding: 18px;
+	}
+
+	.lwsc-studio-artboard {
+		padding: 14px;
+	}
+
+	.lwsc-studio-export .button {
+		width: 100%;
+	}
+}

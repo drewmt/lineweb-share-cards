@@ -9,7 +9,9 @@ defined( 'ABSPATH' ) || exit;
 
 ( static function ( $attributes ) {
 	$mode       = lineweb_share_cards_choice( $attributes['mode'] ?? '', array( 'quote', 'takeaway', 'statistic', 'product' ), 'quote' );
-	$ratio      = lineweb_share_cards_choice( $attributes['ratio'] ?? '', array( 'square', 'portrait', 'landscape' ), 'square' );
+	$ratio      = lineweb_share_cards_choice( $attributes['ratio'] ?? '', array( 'square', 'portrait', 'landscape', 'story' ), 'square' );
+	$font       = lineweb_share_cards_choice( $attributes['font'] ?? '', array( 'sans', 'serif', 'mono' ), 'sans' );
+	$fonts      = array( 'sans' => 'Arial,sans-serif', 'serif' => 'Georgia,serif', 'mono' => 'Courier New,monospace' );
 	$theme      = lineweb_share_cards_choice( $attributes['theme'] ?? '', array( 'editorial', 'signal', 'minimal', 'dark' ), 'editorial' );
 	$text_align = lineweb_share_cards_choice( $attributes['textAlign'] ?? '', array( 'left', 'center' ), 'left' );
 	$eyebrow    = lineweb_share_cards_text( $attributes['eyebrow'] ?? '', 80 );
@@ -83,6 +85,7 @@ defined( 'ABSPATH' ) || exit;
 	$config         = array(
 		'mode'            => $mode,
 		'ratio'           => $ratio,
+		'font'            => $font,
 		'theme'           => $theme,
 		'eyebrow'         => $eyebrow,
 		'content'         => $content,
@@ -115,7 +118,7 @@ defined( 'ABSPATH' ) || exit;
 	$wrapper = get_block_wrapper_attributes(
 		array(
 			'class' => 'lwsc-share-card is-ratio-' . $ratio . ' is-theme-' . $theme,
-			'style' => '--lwsc-bg:' . $background . ';--lwsc-text:' . $text_color . ';--lwsc-accent:' . $accent . ';--lwsc-align:' . $text_align . ';',
+			'style' => '--lwsc-bg:' . $background . ';--lwsc-text:' . $text_color . ';--lwsc-accent:' . $accent . ';--lwsc-align:' . $text_align . ';--lwsc-font:' . $fonts[ $font ] . ';',
 		)
 	);
 	$has_media = '' !== $media_url;

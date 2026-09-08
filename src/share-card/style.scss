@@ -22,6 +22,7 @@
 	box-shadow: 0 1px 2px rgb(0 0 0 / 4%), 0 8px 24px rgb(0 0 0 / 5%);
 	box-sizing: border-box;
 	color: var(--lwsc-text);
+	font-family: var(--lwsc-font, Arial, sans-serif);
 	display: grid;
 	margin: 0 auto;
 	max-width: 860px;
@@ -48,6 +49,11 @@
 .is-ratio-landscape .lwsc-card__visual {
 	aspect-ratio: 40 / 21;
 	max-width: 1040px;
+}
+
+.is-ratio-story .lwsc-card__visual {
+	aspect-ratio: 9 / 16;
+	max-width: 540px;
 }
 
 .lwsc-card__body {
@@ -318,7 +324,8 @@ blockquote.lwsc-card__content {
 
 	.lwsc-card__visual,
 	.is-ratio-landscape .lwsc-card__visual,
-	.is-ratio-portrait .lwsc-card__visual {
+	.is-ratio-portrait .lwsc-card__visual,
+	.is-ratio-story .lwsc-card__visual {
 		aspect-ratio: auto;
 		min-height: 520px;
 	}

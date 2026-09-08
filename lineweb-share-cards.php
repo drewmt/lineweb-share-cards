@@ -1,8 +1,8 @@
 <?php
 /**
  * Plugin Name:       Shareable Quote Images & Social Cards – Lineweb Share Cards
- * Description:       Turn quotes, takeaways, statistics, and WooCommerce products into branded PNG cards visitors can share or download.
- * Version:           0.1.0
+ * Description:       Create branded social images from posts and products in Image Studio, or add shareable quote and product cards with Gutenberg.
+ * Version:           0.2.0
  * Requires at least: 6.9
  * Requires PHP:      8.3
  * Author:            Lineweb
@@ -16,12 +16,14 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'LINEWEB_SHARE_CARDS_VERSION', '0.1.0' );
+define( 'LINEWEB_SHARE_CARDS_VERSION', '0.2.0' );
 define( 'LINEWEB_SHARE_CARDS_FILE', __FILE__ );
 define( 'LINEWEB_SHARE_CARDS_DIR', __DIR__ );
 define( 'LINEWEB_SHARE_CARDS_URL', plugin_dir_url( __FILE__ ) );
 
 require_once __DIR__ . '/includes/block-helpers.php';
+require_once __DIR__ . '/includes/studio-data.php';
+require_once __DIR__ . '/includes/studio-page.php';
 require_once __DIR__ . '/includes/admin-page.php';
 
 /** Load bundled translations for direct ZIP installations. */
@@ -77,6 +79,7 @@ function lineweb_share_cards_init() {
 				'domain'         => lineweb_share_cards_site_domain(),
 				'defaultLogoUrl' => lineweb_share_cards_default_logo_url(),
 				'wooActive'      => class_exists( 'WooCommerce' ),
+				'brand'          => lineweb_share_cards_brand(),
 			)
 		) . ';',
 		'before'
